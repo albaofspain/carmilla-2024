@@ -126,6 +126,7 @@
 
                 render() {
                     const episodes = this.state.castings;
+                    console.log(episodes)
                     const elementsHtml = episodes.map((item, index) => {
                         return /*#__PURE__*/_react.default.createElement("tr", {
                             key: 'row_' + index
