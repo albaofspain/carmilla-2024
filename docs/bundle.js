@@ -133,9 +133,9 @@
                             className: "cell"
                         }, item.name), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.name), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.name), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
                         }, item.season), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
@@ -163,20 +163,14 @@
                         casesensitive: 'true',
                         showsearch: 'true'
                     }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
-                    }, /*#__PURE__*/_react.default.createElement("th", {
-                        key: "name",
-                        filterkey: "name",
-                        className: "cell",
-                        casesensitive: 'true',
-                        showsearch: 'true'
-                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
-                    }, /*#__PURE__*/_react.default.createElement("th", {
-                        key: "name",
-                        filterkey: "name",
-                        className: "cell",
-                        casesensitive: 'true',
-                        showsearch: 'true'
-                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
                         key: "season",
                         filterkey: "season",
                         className: "cell"
