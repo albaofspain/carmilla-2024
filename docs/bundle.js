@@ -133,6 +133,10 @@
                             className: "cell"
                         }, item.name), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
+                        }, item.name), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
+                        }, item.name), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
                         }, item.season), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
                         }, item.number));
@@ -152,6 +156,20 @@
                     }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement(_bundle.default, {
                         rows: episodes,
                         onFilterUpdate: this._filterUpdated
+                    }, /*#__PURE__*/_react.default.createElement("th", {
+                        key: "name",
+                        filterkey: "name",
+                        className: "cell",
+                        casesensitive: 'true',
+                        showsearch: 'true'
+                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
+                    }, /*#__PURE__*/_react.default.createElement("th", {
+                        key: "name",
+                        filterkey: "name",
+                        className: "cell",
+                        casesensitive: 'true',
+                        showsearch: 'true'
+                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
                     }, /*#__PURE__*/_react.default.createElement("th", {
                         key: "name",
                         filterkey: "name",
