@@ -40,7 +40,7 @@ def format_json_to_str(json_input: dict, is_last=False) -> str:
          "\"      \\\"carmilla\\\": \\\"" + json_input['carmilla'] + "\\\", \" \n +" +
          "\"      \\\"laura\\\": \\\"" + json_input['laura'] + "\\\", \" \n +" +
          "\"      \\\"nick\\\": \\\"" + json_input['nick'] + "\\\", \" \n +" +
-         "\"      \\\"spielsdorf\\\": \\\"" + json_input['spielsdorf'] + "\\\", \" \n +" +
+         "\"      \\\"spielsdorf\\\": \\\"" + json_input['spielsdorf'] + "\\\" \" \n +" +
          "\"   }, \" \n +"
          )
 
@@ -51,7 +51,7 @@ def format_json_to_str(json_input: dict, is_last=False) -> str:
              "\"      \\\"carmilla\\\": \\\"" + json_input['carmilla'] + "\\\", \" \n +" +
              "\"      \\\"laura\\\": \\\"" + json_input['laura'] + "\\\", \" \n +" +
              "\"      \\\"nick\\\": \\\"" + json_input['nick'] + "\\\", \" \n +" +
-             "\"      \\\"spielsdorf\\\": \\\"" + json_input['spielsdorf'] + "\\\", \" \n +" +
+             "\"      \\\"spielsdorf\\\": \\\"" + json_input['spielsdorf'] + "\\\" \" \n +" +
              "\"   } \" \n +"
              )
     return s
