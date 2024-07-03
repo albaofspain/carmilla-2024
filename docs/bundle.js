@@ -113,47 +113,47 @@
                 constructor(props) {
                     super(props);
                     this.state = {
-                        'episodes': _sampleData.default._embedded.episodes
+                        'castings': _sampleData.default.prefixes
                     };
                     this._filterUpdated = this._filterUpdated.bind(this);
                 }
 
                 _filterUpdated(newData, filtersObject) {
                     this.setState({
-                        'episodes': newData
+                        'castings': newData
                     });
                 }
 
                 render() {
-                    const episodes = this.state.episodes;
+                    const episodes = this.state.castings;
                     const elementsHtml = episodes.map((item, index) => {
                         return /*#__PURE__*/_react.default.createElement("tr", {
                             key: 'row_' + index
                         }, /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.name), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.playDate), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.playTime), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.carmilla), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.laura), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.nick), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.number));
+                        }, item.spielsdorf));
                     });
                     return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
                         className: "nav-bar"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "container"
-                    }, "React Table Filters")), /*#__PURE__*/_react.default.createElement("div", {
+                    }, "by albaofspain")), /*#__PURE__*/_react.default.createElement("div", {
                         className: "examples"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "basic"
                     }, /*#__PURE__*/_react.default.createElement("h3", {
                         className: "header"
-                    }, "Basic Usage"), /*#__PURE__*/_react.default.createElement("table", {
+                    }, "AWS IP Table"), /*#__PURE__*/_react.default.createElement("table", {
                         className: "basic-table"
                     }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement(_bundle.default, {
                         rows: episodes,
@@ -7721,1252 +7721,1535 @@ object-assign
         /* 12 */
         /***/ (function(module) {
 
-            module.exports = JSON.parse("{\"id\":82,\"url\":\"http://www.tvmaze.com/shows/82/game-of-thrones\",\"name\":\"Game of Thrones\",\"type\":\"Scripted\",\"language\":\"English\",\"genres\":[\"Drama\",\"Adventure\",\"Fantasy\"],\"status\":\"Running\",\"runtime\":60,\"premiered\":\"2011-04-17\",\"officialSite\":\"http://www.hbo.com/game-of-thrones\",\"schedule\":{\"time\":\"21:00\",\"days\":[\"Sunday\"]},\"rating\":{\"average\":9.3},\"weight\":100,\"network\":{\"id\":8,\"name\":\"HBO\",\"country\":{\"name\":\"United States\",\"code\":\"US\",\"timezone\":\"America/New_York\"}},\"webChannel\":{\"id\":22,\"name\":\"HBO Go\",\"country\":{\"name\":\"United States\",\"code\":\"US\",\"timezone\":\"America/New_York\"}},\"externals\":{\"tvrage\":24493,\"thetvdb\":121361,\"imdb\":\"tt0944947\"},\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_portrait/124/310209.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/124/310209.jpg\"},\"summary\":\"<p>Based on the bestselling book series <i>A Song of Ice and Fire</i> by George R.R. Martin, this sprawling new HBO drama is set in a world where summers span decades and winters can last a lifetime. From the scheming south and the savage eastern lands, to the frozen north and ancient Wall that protects the realm from the mysterious darkness beyond, the powerful families of the Seven Kingdoms are locked in a battle for the Iron Throne. This is a story of duplicity and treachery, nobility and honor, conquest and triumph. In the <b>Game of Thrones</b>, you either win or you die.</p>\",\"updated\":1506726326,\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/shows/82\"},\"previousepisode\":{\"href\":\"http://api.tvmaze.com/episodes/1221415\"}},\"_embedded\":{\"episodes\":[{\"id\":4952,\"url\":\"http://www.tvmaze.com/episodes/4952/game-of-thrones-1x01-winter-is-coming\",\"name\":\"Winter is Coming\",\"season\":1,\"number\":1,\"airdate\":\"2011-04-17\",\"airtime\":\"21:00\",\"airstamp\":\"2011-04-18T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2668.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2668.jpg\"},\"summary\":\"<p>Lord Eddard Stark, ruler of the North, is summoned to court by his old friend, King Robert Baratheon, to serve as the King's Hand. Eddard reluctantly agrees after learning of a possible threat to the King's life. Eddard's bastard son Jon Snow must make a painful decision about his own future, while in the distant east Viserys Targaryen plots to reclaim his father's throne, usurped by Robert, by selling his sister in marriage.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4952\"}}},{\"id\":4953,\"url\":\"http://www.tvmaze.com/episodes/4953/game-of-thrones-1x02-the-kingsroad\",\"name\":\"The Kingsroad\",\"season\":1,\"number\":2,\"airdate\":\"2011-04-24\",\"airtime\":\"21:00\",\"airstamp\":\"2011-04-25T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2669.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2669.jpg\"},\"summary\":\"<p>An incident on the Kingsroad threatens Eddard and Robert's friendship. Jon and Tyrion travel to the Wall, where they discover that the reality of the Night's Watch may not match the heroic image of it.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4953\"}}},{\"id\":4954,\"url\":\"http://www.tvmaze.com/episodes/4954/game-of-thrones-1x03-lord-snow\",\"name\":\"Lord Snow\",\"season\":1,\"number\":3,\"airdate\":\"2011-05-01\",\"airtime\":\"21:00\",\"airstamp\":\"2011-05-02T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2671.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2671.jpg\"},\"summary\":\"<p>Jon Snow attempts to find his place amongst the Night's Watch. Eddard and his daughters arrive at King's Landing.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4954\"}}},{\"id\":4955,\"url\":\"http://www.tvmaze.com/episodes/4955/game-of-thrones-1x04-cripples-bastards-and-broken-things\",\"name\":\"Cripples, Bastards, and Broken Things\",\"season\":1,\"number\":4,\"airdate\":\"2011-05-08\",\"airtime\":\"21:00\",\"airstamp\":\"2011-05-09T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2673.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2673.jpg\"},\"summary\":\"<p>Tyrion stops at Winterfell on his way home and gets a frosty reception from Robb Stark. Eddard's investigation into the death of his predecessor gets underway.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4955\"}}},{\"id\":4956,\"url\":\"http://www.tvmaze.com/episodes/4956/game-of-thrones-1x05-the-wolf-and-the-lion\",\"name\":\"The Wolf and the Lion\",\"season\":1,\"number\":5,\"airdate\":\"2011-05-15\",\"airtime\":\"21:00\",\"airstamp\":\"2011-05-16T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2674.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2674.jpg\"},\"summary\":\"<p>Catelyn's actions on the road have repercussions for Eddard. Tyrion enjoys the dubious hospitality of the Eyrie.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4956\"}}},{\"id\":4957,\"url\":\"http://www.tvmaze.com/episodes/4957/game-of-thrones-1x06-a-golden-crown\",\"name\":\"A Golden Crown\",\"season\":1,\"number\":6,\"airdate\":\"2011-05-22\",\"airtime\":\"21:00\",\"airstamp\":\"2011-05-23T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2676.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2676.jpg\"},\"summary\":\"<p>Viserys is increasingly frustrated by the lack of progress towards gaining his crown.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4957\"}}},{\"id\":4958,\"url\":\"http://www.tvmaze.com/episodes/4958/game-of-thrones-1x07-you-win-or-you-die\",\"name\":\"You Win or You Die\",\"season\":1,\"number\":7,\"airdate\":\"2011-05-29\",\"airtime\":\"21:00\",\"airstamp\":\"2011-05-30T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2677.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2677.jpg\"},\"summary\":\"<p>Eddard's investigations in King's Landing reach a climax and a dark secret is revealed.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4958\"}}},{\"id\":4959,\"url\":\"http://www.tvmaze.com/episodes/4959/game-of-thrones-1x08-the-pointy-end\",\"name\":\"The Pointy End\",\"season\":1,\"number\":8,\"airdate\":\"2011-06-05\",\"airtime\":\"21:00\",\"airstamp\":\"2011-06-06T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2678.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2678.jpg\"},\"summary\":\"<p>Tyrion joins his father's army with unexpected allies. Events in King's Landing take a turn for the worse as Arya's lessons are put to the test.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4959\"}}},{\"id\":4960,\"url\":\"http://www.tvmaze.com/episodes/4960/game-of-thrones-1x09-baelor\",\"name\":\"Baelor\",\"season\":1,\"number\":9,\"airdate\":\"2011-06-12\",\"airtime\":\"21:00\",\"airstamp\":\"2011-06-13T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2679.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2679.jpg\"},\"summary\":\"<p>Catelyn must negotiate with the irascible Lord Walder Frey.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4960\"}}},{\"id\":4961,\"url\":\"http://www.tvmaze.com/episodes/4961/game-of-thrones-1x10-fire-and-blood\",\"name\":\"Fire and Blood\",\"season\":1,\"number\":10,\"airdate\":\"2011-06-19\",\"airtime\":\"21:00\",\"airstamp\":\"2011-06-20T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/2681.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/2681.jpg\"},\"summary\":\"<p>Daenerys must realize her destiny. Jaime finds himself in an unfamiliar predicament.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4961\"}}},{\"id\":4962,\"url\":\"http://www.tvmaze.com/episodes/4962/game-of-thrones-2x01-the-north-remembers\",\"name\":\"The North Remembers\",\"season\":2,\"number\":1,\"airdate\":\"2012-04-01\",\"airtime\":\"21:00\",\"airstamp\":\"2012-04-02T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3174.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3174.jpg\"},\"summary\":\"<p>War grips the continent of Westeros. As Tyrion Lannister tries to take his strong-willed nephew in hand in King's Landing, Stannis Baratheon launches his own campaign to take the Iron Throne with the help of a mysterious priestess. In the east, Daenerys must lead her retinue through a desolate wasteland whilst beyond the Wall the Night's Watch seeks the aid of a wildling.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4962\"}}},{\"id\":4963,\"url\":\"http://www.tvmaze.com/episodes/4963/game-of-thrones-2x02-the-night-lands\",\"name\":\"The Night Lands\",\"season\":2,\"number\":2,\"airdate\":\"2012-04-08\",\"airtime\":\"21:00\",\"airstamp\":\"2012-04-09T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3175.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3175.jpg\"},\"summary\":\"<p>Stannis uses Ser Davos to seek out new allies for his war with the Lannisters. On the road north, Arya confides in Gendry. Robb Stark sends Theon Greyjoy to win an alliance with his father and the fierce warriors of the Iron Islands. Cersei and Tyrion clash on how to rule in King's Landing.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4963\"}}},{\"id\":4964,\"url\":\"http://www.tvmaze.com/episodes/4964/game-of-thrones-2x03-what-is-dead-may-never-die\",\"name\":\"What is Dead May Never Die\",\"season\":2,\"number\":3,\"airdate\":\"2012-04-15\",\"airtime\":\"21:00\",\"airstamp\":\"2012-04-16T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3176.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3176.jpg\"},\"summary\":\"<p>Catelyn Stark treats with King Renly in the hope of winning an alliance. Tyrion undertakes a complex plan in King's Landing to expose an enemy. At Winterfell, Bran's dreams continue to trouble him.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4964\"}}},{\"id\":4965,\"url\":\"http://www.tvmaze.com/episodes/4965/game-of-thrones-2x04-garden-of-bones\",\"name\":\"Garden of Bones\",\"season\":2,\"number\":4,\"airdate\":\"2012-04-22\",\"airtime\":\"21:00\",\"airstamp\":\"2012-04-23T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3177.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3177.jpg\"},\"summary\":\"<p>Tyrion attempts to restrain Joffrey's cruelty. Catelyn attempts to broker a peace between Stannis and Renly. Daenerys and her followers arrive at the great city of Qarth and hope to find refuge there. Arya and Gendry arrive at Harrenhal, a great castle now under Lannister occupation.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4965\"}}},{\"id\":4966,\"url\":\"http://www.tvmaze.com/episodes/4966/game-of-thrones-2x05-the-ghost-of-harrenhal\",\"name\":\"The Ghost of Harrenhal\",\"season\":2,\"number\":5,\"airdate\":\"2012-04-29\",\"airtime\":\"21:00\",\"airstamp\":\"2012-04-30T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3178.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3178.jpg\"},\"summary\":\"<p>Confusion rages in the Stormlands in the wake of a devastating reversal. Catelyn must flee with a new ally, whilst Littlefinger sees an opportunity in the chaos. Theon seeks to prove himself to his father in battle. Arya receives a promise from the enigmatic Jaqen H'ghar. The Night's Watch arrives at the Fist of the First Men. Daenerys Targaryen receives a marriage proposal.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4966\"}}},{\"id\":4967,\"url\":\"http://www.tvmaze.com/episodes/4967/game-of-thrones-2x06-the-old-gods-and-the-new\",\"name\":\"The Old Gods and the New\",\"season\":2,\"number\":6,\"airdate\":\"2012-05-06\",\"airtime\":\"21:00\",\"airstamp\":\"2012-05-07T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3180.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3180.jpg\"},\"summary\":\"<p>Arya has a surprise visitor; Dany vows to take what is hers; Joffrey meets his subjects; Qhorin gives Jon a chance to prove himself.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4967\"}}},{\"id\":4968,\"url\":\"http://www.tvmaze.com/episodes/4968/game-of-thrones-2x07-a-man-without-honor\",\"name\":\"A Man Without Honor\",\"season\":2,\"number\":7,\"airdate\":\"2012-05-13\",\"airtime\":\"21:00\",\"airstamp\":\"2012-05-14T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3192.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3192.jpg\"},\"summary\":\"<p>Jaime meets a relative; Theon hunts; Dany receives an invitation.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4968\"}}},{\"id\":4969,\"url\":\"http://www.tvmaze.com/episodes/4969/game-of-thrones-2x08-the-prince-of-winterfell\",\"name\":\"The Prince of Winterfell\",\"season\":2,\"number\":8,\"airdate\":\"2012-05-20\",\"airtime\":\"21:00\",\"airstamp\":\"2012-05-21T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3194.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3194.jpg\"},\"summary\":\"<p>Theon holds the fort; Arya calls in her debt with Jaqen; Robb is betrayed; Stannis and Davos approach their destination.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4969\"}}},{\"id\":4970,\"url\":\"http://www.tvmaze.com/episodes/4970/game-of-thrones-2x09-blackwater\",\"name\":\"Blackwater\",\"season\":2,\"number\":9,\"airdate\":\"2012-05-27\",\"airtime\":\"21:00\",\"airstamp\":\"2012-05-28T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3196.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3196.jpg\"},\"summary\":\"<p>A massive battle rages for control of King's Landing and the Iron Throne.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4970\"}}},{\"id\":4971,\"url\":\"http://www.tvmaze.com/episodes/4971/game-of-thrones-2x10-valar-morghulis\",\"name\":\"Valar Morghulis\",\"season\":2,\"number\":10,\"airdate\":\"2012-06-03\",\"airtime\":\"21:00\",\"airstamp\":\"2012-06-04T01:00:00+00:00\",\"runtime\":60,\"image\":{\"medium\":\"http://static.tvmaze.com/uploads/images/medium_landscape/1/3197.jpg\",\"original\":\"http://static.tvmaze.com/uploads/images/original_untouched/1/3197.jpg\"},\"summary\":\"<p>Tyrion awakens to a changed situation. King Joffrey doles out rewards to his subjects. As Theon stirs his men to action, Luwin offers some final advice. Brienne silences Jaime; Arya receives a gift from Jaqen; Dany goes to a strange place; Jon proves himself to Qhorin.</p>\",\"_links\":{\"self\":{\"href\":\"http://api.tvmaze.com/episodes/4971\"}}}]}}");
+            module.exports = JSON.parse("{\n" +
+                "  \"syncToken\": \"1717011189\",\n" +
+                "  \"createDate\": \"2024-05-29-19-33-09\",\n" +
+                "  \"castings\": [\n" +    "{" 
+ +"      \"playDate\": \"20240703\", " 
+ +"      \"playTime\": \"1600\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240703\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240704\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240705\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240706\", " 
+ +"      \"playTime\": \"1500\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240706\", " 
+ +"      \"playTime\": \"1900\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240707\", " 
+ +"      \"playTime\": \"1400\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240707\", " 
+ +"      \"playTime\": \"1800\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240709\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240710\", " 
+ +"      \"playTime\": \"1600\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240710\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240711\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240712\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240713\", " 
+ +"      \"playTime\": \"1500\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240713\", " 
+ +"      \"playTime\": \"1900\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240714\", " 
+ +"      \"playTime\": \"1400\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240714\", " 
+ +"      \"playTime\": \"1800\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240716\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240717\", " 
+ +"      \"playTime\": \"1600\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240717\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240718\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240719\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240720\", " 
+ +"      \"playTime\": \"1500\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240720\", " 
+ +"      \"playTime\": \"1900\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240721\", " 
+ +"      \"playTime\": \"1400\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240721\", " 
+ +"      \"playTime\": \"1800\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240723\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240724\", " 
+ +"      \"playTime\": \"1600\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240724\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240725\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240726\", " 
+ +"      \"playTime\": \"2000\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240727\", " 
+ +"      \"playTime\": \"1500\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"박새힘\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240727\", " 
+ +"      \"playTime\": \"1900\", " 
+ +"      \"carmilla\": \"유주혜\", " 
+ +"      \"laura\": \"이재림\", " 
+ +"      \"nick\": \"송영미\", " 
+ +"      \"spielsdorf\": \"반정모\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240728\", " 
+ +"      \"playTime\": \"1400\", " 
+ +"      \"carmilla\": \"정예인\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"김서연\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   }, " 
+ +    "{" 
+ +"      \"playDate\": \"20240728\", " 
+ +"      \"playTime\": \"1800\", " 
+ +"      \"carmilla\": \"전민지\", " 
+ +"      \"laura\": \"이서영\", " 
+ +"      \"nick\": \"민도희\", " 
+ +"      \"spielsdorf\": \"한상훈\", " 
+ +"   } " 
+ +"  ]\n" +
+"}");
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
 
-            /***/ }),
-        /* 13 */
-        /***/ (function(module, exports, __webpack_require__) {
+    "use strict";
 
+
+    !function (e, t) {
+        true ? module.exports = t(__webpack_require__(1)) : undefined;
+    }(window, function (e) {
+        return function (e) {
+            var t = {};
+
+            function i(s) {
+                if (t[s]) return t[s].exports;
+                var r = t[s] = {
+                    i: s,
+                    l: !1,
+                    exports: {}
+                };
+                return e[s].call(r.exports, r, r.exports, i), r.l = !0, r.exports;
+            }
+
+            return i.m = e, i.c = t, i.d = function (e, t, s) {
+                i.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: s
+                });
+            }, i.r = function (e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                });
+            }, i.t = function (e, t) {
+                if (1 & t && (e = i(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var s = Object.create(null);
+                if (i.r(s), Object.defineProperty(s, "default", {
+                    enumerable: !0,
+                    value: e
+                }), 2 & t && "string" != typeof e) for (var r in e) i.d(s, r, function (t) {
+                    return e[t];
+                }.bind(null, r));
+                return s;
+            }, i.n = function (e) {
+                var t = e && e.__esModule ? function () {
+                    return e.default;
+                } : function () {
+                    return e;
+                };
+                return i.d(t, "a", t), t;
+            }, i.o = function (e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t);
+            }, i.p = "", i(i.s = 6);
+        }([function (t, i) {
+            t.exports = e;
+        }, function (e, t, i) {
+            e.exports = i(10)();
+        }, function (e, t, i) {
             "use strict";
 
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = t.without = t.uniq = t.getValForKey = t.isTypeString = t.isTypeArray = t.isUndefined = void 0;
 
-            !function (e, t) {
-                true ? module.exports = t(__webpack_require__(1)) : undefined;
-            }(window, function (e) {
-                return function (e) {
-                    var t = {};
+            const s = (e, t) => null == e || "undefined" === e || "null" === e || !(!t || "string" != typeof e || 0 !== e.toString().trim().length);
 
-                    function i(s) {
-                        if (t[s]) return t[s].exports;
-                        var r = t[s] = {
-                            i: s,
-                            l: !1,
-                            exports: {}
-                        };
-                        return e[s].call(r.exports, r, r.exports, i), r.l = !0, r.exports;
-                    }
+            t.isUndefined = s;
 
-                    return i.m = e, i.c = t, i.d = function (e, t, s) {
-                        i.o(e, t) || Object.defineProperty(e, t, {
-                            enumerable: !0,
-                            get: s
-                        });
-                    }, i.r = function (e) {
-                        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
-                            value: "Module"
-                        }), Object.defineProperty(e, "__esModule", {
-                            value: !0
-                        });
-                    }, i.t = function (e, t) {
-                        if (1 & t && (e = i(e)), 8 & t) return e;
-                        if (4 & t && "object" == typeof e && e && e.__esModule) return e;
-                        var s = Object.create(null);
-                        if (i.r(s), Object.defineProperty(s, "default", {
-                            enumerable: !0,
-                            value: e
-                        }), 2 & t && "string" != typeof e) for (var r in e) i.d(s, r, function (t) {
-                            return e[t];
-                        }.bind(null, r));
-                        return s;
-                    }, i.n = function (e) {
-                        var t = e && e.__esModule ? function () {
-                            return e.default;
-                        } : function () {
-                            return e;
-                        };
-                        return i.d(t, "a", t), t;
-                    }, i.o = function (e, t) {
-                        return Object.prototype.hasOwnProperty.call(e, t);
-                    }, i.p = "", i(i.s = 6);
-                }([function (t, i) {
-                    t.exports = e;
-                }, function (e, t, i) {
-                    e.exports = i(10)();
-                }, function (e, t, i) {
-                    "use strict";
+            const r = e => "[object Array]" === Object.prototype.toString.call(e);
 
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = t.without = t.uniq = t.getValForKey = t.isTypeString = t.isTypeArray = t.isUndefined = void 0;
+            t.isTypeArray = r;
 
-                    const s = (e, t) => null == e || "undefined" === e || "null" === e || !(!t || "string" != typeof e || 0 !== e.toString().trim().length);
+            const l = e => "[object String]" === Object.prototype.toString.call(e);
 
-                    t.isUndefined = s;
+            t.isTypeString = l;
 
-                    const r = e => "[object Array]" === Object.prototype.toString.call(e);
+            const n = (e, t) => {
+                if (!s(t)) {
+                    if (l(t)) {
+                        const i = t.split(".");
+                        if (1 === i.length) return e[t];
+                        {
+                            let t,
+                                r,
+                                l = e;
 
-                    t.isTypeArray = r;
+                            for (t = 0, r = i.length; t < r; t += 1) {
+                                const e = l[i[t]];
 
-                    const l = e => "[object String]" === Object.prototype.toString.call(e);
-
-                    t.isTypeString = l;
-
-                    const n = (e, t) => {
-                        if (!s(t)) {
-                            if (l(t)) {
-                                const i = t.split(".");
-                                if (1 === i.length) return e[t];
-                                {
-                                    let t,
-                                        r,
-                                        l = e;
-
-                                    for (t = 0, r = i.length; t < r; t += 1) {
-                                        const e = l[i[t]];
-
-                                        if (s(e)) {
-                                            l = void 0;
-                                            break;
-                                        }
-
-                                        l = e;
-                                    }
-
-                                    return l;
-                                }
-                            }
-
-                            return e[t];
-                        }
-                    };
-
-                    t.getValForKey = n;
-
-                    const a = e => {
-                        if (null != e && e.length) {
-                            return [...new Set(e)];
-                        }
-
-                        return [];
-                    };
-
-                    t.uniq = a;
-
-                    const o = (e, t = []) => {
-                        const i = [];
-                        return e.length ? (e.forEach(e => {
-                            t.indexOf(e) < 0 && i.push(e);
-                        }), i) : i;
-                    };
-
-                    t.without = o;
-                    var d = {
-                        isUndefined: s,
-                        isTypeArray: r,
-                        isTypeString: l,
-                        getValForKey: n,
-                        uniq: a,
-                        without: o
-                    };
-                    t.default = d;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = t.DSC_VALUE = t.ASC_VALUE = t.BLANK_LABEL = void 0;
-                    t.BLANK_LABEL = "(blank)";
-                    t.ASC_VALUE = "asc";
-                    t.DSC_VALUE = "dsc";
-                    var s = {
-                        BLANK_LABEL: "(blank)",
-                        ASC_VALUE: "asc",
-                        DSC_VALUE: "dsc"
-                    };
-                    t.default = s;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.calculateFilterProps = t.createFiltersFromItems = t.filtersReset = t.filterAction = t.filterActions = void 0;
-                    var s = i(2),
-                        r = i(5),
-                        l = i(3);
-
-                    function n() {
-                        return (n = Object.assign || function (e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var i = arguments[t];
-
-                                for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
-                            }
-
-                            return e;
-                        }).apply(this, arguments);
-                    }
-
-                    t.filterActions = (e = [], t = [], i = !0, r) => {
-                        const l = [],
-                            a = e.map(e => {
-                                const a = n({}, e);
-                                let o, d;
-
-                                for ((0, s.isUndefined)(a.appliedFilters) && (a.appliedFilters = {}), o = 0, d = t.length; o < d; o += 1) {
-                                    const l = t[o],
-                                        n = l.key;
-                                    let d = l.value;
-                                    (0, s.isUndefined)(d) && (d = "");
-                                    let u = (0, s.getValForKey)(e, n);
-                                    (0, s.isUndefined)(r) || (u = r(u)), (0, s.isUndefined)(u) && (u = ""), (0, s.isTypeString)(u) && (u = u.trim()), i ? u === d && (a.appliedFilters[n] || (a.appliedFilters[n] = 0), a.appliedFilters[n] += 1) : u === d && (a.appliedFilters[n] -= 1, 0 === a.appliedFilters[n] && delete a.appliedFilters[n]);
+                                if (s(e)) {
+                                    l = void 0;
+                                    break;
                                 }
 
-                                return 0 === Object.keys(a.appliedFilters).length && (delete a.appliedFilters, l.push(n({}, a))), a;
-                            });
-                        return {
-                            filteredArray: l,
-                            dataWithFilter: a
-                        };
-                    };
-
-                    t.filterAction = (e = [], t = {}, i = !0, r) => {
-                        const l = t.key;
-                        let a = t.value;
-
-                        if ((0, s.isUndefined)(a) && (a = ""), !(0, s.isUndefined)(l)) {
-                            const t = [],
-                                o = e.map(e => {
-                                    const o = n({}, e);
-                                    let d = (0, s.getValForKey)(e, l);
-                                    return (0, s.isUndefined)(r) || (d = r(d)), (0, s.isUndefined)(d) && (d = ""), (0, s.isUndefined)(o.appliedFilters) && (o.appliedFilters = {}), (0, s.isTypeString)(d) && (d = d.trim()), i ? d === a && (o.appliedFilters[l] || (o.appliedFilters[l] = 0), o.appliedFilters[l] += 1) : d === a && (o.appliedFilters[l] -= 1, 0 === o.appliedFilters[l] && delete o.appliedFilters[l]), 0 === Object.keys(o.appliedFilters).length && (delete o.appliedFilters, t.push(n({}, o))), o;
-                                });
-                            return {
-                                filteredArray: t,
-                                dataWithFilter: o
-                            };
-                        }
-                    };
-
-                    t.filtersReset = (e = [], t = [], i, r = !0, l) => {
-                        const a = [],
-                            o = e.map(e => {
-                                const o = n({}, e);
-                                (0, s.isUndefined)(o.appliedFilters) && (o.appliedFilters = {});
-                                let d = (0, s.getValForKey)(o, i);
-                                return (0, s.isUndefined)(l) || (d = l(d)), (0, s.isUndefined)(d) && (d = ""), (0, s.isTypeString)(d) && (d = d.trim()), t.indexOf(d) >= 0 && (r ? delete o.appliedFilters[i] : (o.appliedFilters[i] || (o.appliedFilters[i] = 0), o.appliedFilters[i]++)), 0 === Object.keys(o.appliedFilters).length && (delete o.appliedFilters, a.push(n({}, o))), o;
-                            });
-                        return {
-                            filteredArray: a,
-                            dataWithFilter: o
-                        };
-                    };
-
-                    const a = (e, t, i, a) => {
-                        const o = e ? [...e] : [],
-                            d = [];
-                        let u = [],
-                            c = !0;
-                        return o.map(e => {
-                            let r = (0, s.getValForKey)(e, t),
-                                a = r;
-                            (0, s.isUndefined)(i) || (r = i(r));
-                            const o = e.appliedFilters || {};
-                            let p = r;
-                            if ((0, s.isUndefined)(r) ? (p = l.BLANK_LABEL, r = "", a = p) : (0, s.isTypeString)(r) && (r = r.trim(), 0 === r.length && (p = l.BLANK_LABEL, a = p)), -1 === d.indexOf(r)) !(0, s.isUndefined)(o) && Object.keys(o).length > 0 ? 1 === Object.keys(o).length && Object.keys(o)[0] === t ? (c = !1, u.push({
-                                key: r,
-                                display: p,
-                                selected: !1,
-                                visible: !0,
-                                orinigalValue: a
-                            })) : u.push({
-                                key: r,
-                                display: p,
-                                selected: !0,
-                                visible: !1,
-                                orinigalValue: a
-                            }) : u.push({
-                                key: r,
-                                display: p,
-                                selected: !0,
-                                visible: !0,
-                                orinigalValue: a
-                            }), d.push(r);else {
-                                const e = d.indexOf(r);
-                                let i = u[e];
-                                0 === Object.keys(o).length && (i.selected && i.visible || (i = n({}, i, {
-                                    selected: !0,
-                                    visible: !0
-                                }), u[e] = i)), 1 === Object.keys(o).length && Object.keys(o)[0] === t && (c = !1, i = n({}, i, {
-                                    selected: !1,
-                                    visible: !0
-                                }), u[e] = i);
+                                l = e;
                             }
-                        }), u = (0, r.sortAction)(u, l.ASC_VALUE, {
-                            valueFunc: a,
-                            key: "orinigalValue"
-                        }), {
-                            filterList: u,
-                            selectState: c
-                        };
+
+                            return l;
+                        }
+                    }
+
+                    return e[t];
+                }
+            };
+
+            t.getValForKey = n;
+
+            const a = e => {
+                if (null != e && e.length) {
+                    return [...new Set(e)];
+                }
+
+                return [];
+            };
+
+            t.uniq = a;
+
+            const o = (e, t = []) => {
+                const i = [];
+                return e.length ? (e.forEach(e => {
+                    t.indexOf(e) < 0 && i.push(e);
+                }), i) : i;
+            };
+
+            t.without = o;
+            var d = {
+                isUndefined: s,
+                isTypeArray: r,
+                isTypeString: l,
+                getValForKey: n,
+                uniq: a,
+                without: o
+            };
+            t.default = d;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = t.DSC_VALUE = t.ASC_VALUE = t.BLANK_LABEL = void 0;
+            t.BLANK_LABEL = "(blank)";
+            t.ASC_VALUE = "asc";
+            t.DSC_VALUE = "dsc";
+            var s = {
+                BLANK_LABEL: "(blank)",
+                ASC_VALUE: "asc",
+                DSC_VALUE: "dsc"
+            };
+            t.default = s;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.calculateFilterProps = t.createFiltersFromItems = t.filtersReset = t.filterAction = t.filterActions = void 0;
+            var s = i(2),
+                r = i(5),
+                l = i(3);
+
+            function n() {
+                return (n = Object.assign || function (e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                        var i = arguments[t];
+
+                        for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
+                    }
+
+                    return e;
+                }).apply(this, arguments);
+            }
+
+            t.filterActions = (e = [], t = [], i = !0, r) => {
+                const l = [],
+                    a = e.map(e => {
+                        const a = n({}, e);
+                        let o, d;
+
+                        for ((0, s.isUndefined)(a.appliedFilters) && (a.appliedFilters = {}), o = 0, d = t.length; o < d; o += 1) {
+                            const l = t[o],
+                                n = l.key;
+                            let d = l.value;
+                            (0, s.isUndefined)(d) && (d = "");
+                            let u = (0, s.getValForKey)(e, n);
+                            (0, s.isUndefined)(r) || (u = r(u)), (0, s.isUndefined)(u) && (u = ""), (0, s.isTypeString)(u) && (u = u.trim()), i ? u === d && (a.appliedFilters[n] || (a.appliedFilters[n] = 0), a.appliedFilters[n] += 1) : u === d && (a.appliedFilters[n] -= 1, 0 === a.appliedFilters[n] && delete a.appliedFilters[n]);
+                        }
+
+                        return 0 === Object.keys(a.appliedFilters).length && (delete a.appliedFilters, l.push(n({}, a))), a;
+                    });
+                return {
+                    filteredArray: l,
+                    dataWithFilter: a
+                };
+            };
+
+            t.filterAction = (e = [], t = {}, i = !0, r) => {
+                const l = t.key;
+                let a = t.value;
+
+                if ((0, s.isUndefined)(a) && (a = ""), !(0, s.isUndefined)(l)) {
+                    const t = [],
+                        o = e.map(e => {
+                            const o = n({}, e);
+                            let d = (0, s.getValForKey)(e, l);
+                            return (0, s.isUndefined)(r) || (d = r(d)), (0, s.isUndefined)(d) && (d = ""), (0, s.isUndefined)(o.appliedFilters) && (o.appliedFilters = {}), (0, s.isTypeString)(d) && (d = d.trim()), i ? d === a && (o.appliedFilters[l] || (o.appliedFilters[l] = 0), o.appliedFilters[l] += 1) : d === a && (o.appliedFilters[l] -= 1, 0 === o.appliedFilters[l] && delete o.appliedFilters[l]), 0 === Object.keys(o.appliedFilters).length && (delete o.appliedFilters, t.push(n({}, o))), o;
+                        });
+                    return {
+                        filteredArray: t,
+                        dataWithFilter: o
+                    };
+                }
+            };
+
+            t.filtersReset = (e = [], t = [], i, r = !0, l) => {
+                const a = [],
+                    o = e.map(e => {
+                        const o = n({}, e);
+                        (0, s.isUndefined)(o.appliedFilters) && (o.appliedFilters = {});
+                        let d = (0, s.getValForKey)(o, i);
+                        return (0, s.isUndefined)(l) || (d = l(d)), (0, s.isUndefined)(d) && (d = ""), (0, s.isTypeString)(d) && (d = d.trim()), t.indexOf(d) >= 0 && (r ? delete o.appliedFilters[i] : (o.appliedFilters[i] || (o.appliedFilters[i] = 0), o.appliedFilters[i]++)), 0 === Object.keys(o.appliedFilters).length && (delete o.appliedFilters, a.push(n({}, o))), o;
+                    });
+                return {
+                    filteredArray: a,
+                    dataWithFilter: o
+                };
+            };
+
+            const a = (e, t, i, a) => {
+                const o = e ? [...e] : [],
+                    d = [];
+                let u = [],
+                    c = !0;
+                return o.map(e => {
+                    let r = (0, s.getValForKey)(e, t),
+                        a = r;
+                    (0, s.isUndefined)(i) || (r = i(r));
+                    const o = e.appliedFilters || {};
+                    let p = r;
+                    if ((0, s.isUndefined)(r) ? (p = l.BLANK_LABEL, r = "", a = p) : (0, s.isTypeString)(r) && (r = r.trim(), 0 === r.length && (p = l.BLANK_LABEL, a = p)), -1 === d.indexOf(r)) !(0, s.isUndefined)(o) && Object.keys(o).length > 0 ? 1 === Object.keys(o).length && Object.keys(o)[0] === t ? (c = !1, u.push({
+                        key: r,
+                        display: p,
+                        selected: !1,
+                        visible: !0,
+                        orinigalValue: a
+                    })) : u.push({
+                        key: r,
+                        display: p,
+                        selected: !0,
+                        visible: !1,
+                        orinigalValue: a
+                    }) : u.push({
+                        key: r,
+                        display: p,
+                        selected: !0,
+                        visible: !0,
+                        orinigalValue: a
+                    }), d.push(r);else {
+                        const e = d.indexOf(r);
+                        let i = u[e];
+                        0 === Object.keys(o).length && (i.selected && i.visible || (i = n({}, i, {
+                            selected: !0,
+                            visible: !0
+                        }), u[e] = i)), 1 === Object.keys(o).length && Object.keys(o)[0] === t && (c = !1, i = n({}, i, {
+                            selected: !1,
+                            visible: !0
+                        }), u[e] = i);
+                    }
+                }), u = (0, r.sortAction)(u, l.ASC_VALUE, {
+                    valueFunc: a,
+                    key: "orinigalValue"
+                }), {
+                    filterList: u,
+                    selectState: c
+                };
+            };
+
+            t.createFiltersFromItems = a;
+
+            t.calculateFilterProps = ({
+                                          filteredData: e,
+                                          filterkey: t,
+                                          itemDisplayValueFunc: i,
+                                          itemSortValueFunc: r,
+                                          sortKey: l,
+                                          sortType: n
+                                      }) => {
+                const {
+                    filterList: o,
+                    selectState: d
+                } = a(e, t, i, r);
+                return {
+                    filterList: o,
+                    selectAllFilters: d,
+                    sortType: (0, s.isUndefined)(l) || l !== t ? void 0 : n
+                };
+            };
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = t.sortAction = void 0;
+            var s = i(2);
+
+            const r = (e = [], t, {
+                valueFunc: i,
+                caseSensitive: r = !1,
+                key: l
+            } = {}) => {
+                if (!(0, s.isUndefined)(t)) {
+                    const n = (e, n) => {
+                        let a, o;
+                        (0, s.isUndefined)(l) ? (a = e, o = n) : (a = (0, s.getValForKey)(e, l), o = (0, s.getValForKey)(n, l)), (0, s.isUndefined)(i) ? (isNaN(Number(a)) || isNaN(Number(o)) || (a = Number(a), o = Number(o)), (0, s.isTypeString)(a) && (a = a.trim(), r || (a = a.toUpperCase())), (0, s.isTypeString)(o) && (o = o.trim(), r || (o = o.toUpperCase()))) : (a = i(a), o = i(o)), (0, s.isUndefined)(a) && (a = ""), (0, s.isUndefined)(o) && (o = "");
+                        let d = 0;
+                        return d = a < o ? -1 : 1, "asc" === t ? d : -d;
                     };
 
-                    t.createFiltersFromItems = a;
+                    return [...e].sort(n);
+                }
 
-                    t.calculateFilterProps = ({
-                                                  filteredData: e,
-                                                  filterkey: t,
-                                                  itemDisplayValueFunc: i,
-                                                  itemSortValueFunc: r,
-                                                  sortKey: l,
-                                                  sortType: n
-                                              }) => {
-                        const {
-                            filterList: o,
-                            selectState: d
-                        } = a(e, t, i, r);
-                        return {
-                            filterList: o,
-                            selectAllFilters: d,
-                            sortType: (0, s.isUndefined)(l) || l !== t ? void 0 : n
-                        };
-                    };
-                }, function (e, t, i) {
-                    "use strict";
+                return e;
+            };
 
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = t.sortAction = void 0;
-                    var s = i(2);
+            t.sortAction = r;
+            var l = r;
+            t.default = l;
+        }, function (e, t, i) {
+            "use strict";
 
-                    const r = (e = [], t, {
-                        valueFunc: i,
-                        caseSensitive: r = !1,
-                        key: l
-                    } = {}) => {
-                        if (!(0, s.isUndefined)(t)) {
-                            const n = (e, n) => {
-                                let a, o;
-                                (0, s.isUndefined)(l) ? (a = e, o = n) : (a = (0, s.getValForKey)(e, l), o = (0, s.getValForKey)(n, l)), (0, s.isUndefined)(i) ? (isNaN(Number(a)) || isNaN(Number(o)) || (a = Number(a), o = Number(o)), (0, s.isTypeString)(a) && (a = a.trim(), r || (a = a.toUpperCase())), (0, s.isTypeString)(o) && (o = o.trim(), r || (o = o.toUpperCase()))) : (a = i(a), o = i(o)), (0, s.isUndefined)(a) && (a = ""), (0, s.isUndefined)(o) && (o = "");
-                                let d = 0;
-                                return d = a < o ? -1 : 1, "asc" === t ? d : -d;
-                            };
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = i(0),
+                r = d(i(7)),
+                l = i(2),
+                n = i(4),
+                a = i(5),
+                o = d(i(1));
 
-                            return [...e].sort(n);
+            function d(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            function u() {
+                return (u = Object.assign || function (e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                        var i = arguments[t];
+
+                        for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
+                    }
+
+                    return e;
+                }).apply(this, arguments);
+            }
+
+            function c(e, t, i) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: i,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = i, e;
+            }
+
+            class p extends s.Component {
+                constructor(e) {
+                    super(e), c(this, "_applyInitialFilters", (e = []) => {
+                        const t = this.currentFilters;
+
+                        if (!(0, l.isUndefined)(t) && Object.keys(t).length > 0) {
+                            let i;
+                            Object.keys(t).map(s => {
+                                const r = t[s].map(e => ({
+                                        key: s,
+                                        value: e
+                                    })),
+                                    l = (0, n.filterActions)(e, r, !0, this._getValueFunctionForKey(s));
+                                i = l.filteredArray, e = l.dataWithFilter;
+                            }), this.props.onFilterUpdate && this.props.onFilterUpdate(i, t);
                         }
 
                         return e;
-                    };
-
-                    t.sortAction = r;
-                    var l = r;
-                    t.default = l;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = i(0),
-                        r = d(i(7)),
-                        l = i(2),
-                        n = i(4),
-                        a = i(5),
-                        o = d(i(1));
-
-                    function d(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
+                    }), c(this, "_getValueFunctionForKey", e => {
+                        let t;
+                        return this.props.children.map((i, s) => {
+                            (0, l.isUndefined)(i) || (0, l.isUndefined)(i.props.filterkey, !0) || i.props.filterkey !== e || (t = i.props.itemDisplayValueFunc);
+                        }), t;
+                    }), c(this, "_createData", (e = []) => {
+                        const t = [],
+                            i = [];
+                        return e.map(e => {
+                            t.push(u({}, e)), i.push(u({}, e));
+                        }), {
+                            initialData: t,
+                            filteredData: i
                         };
-                    }
+                    }), c(this, "_filterMulipleRows", (e = [], t = [], i) => {
+                        const s = this.state.filteredData;
 
-                    function u() {
-                        return (u = Object.assign || function (e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var i = arguments[t];
+                        if (!(0, l.isUndefined)(e)) {
+                            t.map(e => {
+                                this._updateCurrentFilter(e.value, !1, e.key);
+                            }), e.map(e => {
+                                this._updateCurrentFilter(e.value, !0, e.key);
+                            });
+                            let r = (0, n.filterActions)(s, t, !1, i);
 
-                                for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
-                            }
-
-                            return e;
-                        }).apply(this, arguments);
-                    }
-
-                    function c(e, t, i) {
-                        return t in e ? Object.defineProperty(e, t, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = i, e;
-                    }
-
-                    class p extends s.Component {
-                        constructor(e) {
-                            super(e), c(this, "_applyInitialFilters", (e = []) => {
-                                const t = this.currentFilters;
-
-                                if (!(0, l.isUndefined)(t) && Object.keys(t).length > 0) {
-                                    let i;
-                                    Object.keys(t).map(s => {
-                                        const r = t[s].map(e => ({
-                                                key: s,
-                                                value: e
-                                            })),
-                                            l = (0, n.filterActions)(e, r, !0, this._getValueFunctionForKey(s));
-                                        i = l.filteredArray, e = l.dataWithFilter;
-                                    }), this.props.onFilterUpdate && this.props.onFilterUpdate(i, t);
-                                }
-
-                                return e;
-                            }), c(this, "_getValueFunctionForKey", e => {
-                                let t;
-                                return this.props.children.map((i, s) => {
-                                    (0, l.isUndefined)(i) || (0, l.isUndefined)(i.props.filterkey, !0) || i.props.filterkey !== e || (t = i.props.itemDisplayValueFunc);
-                                }), t;
-                            }), c(this, "_createData", (e = []) => {
-                                const t = [],
-                                    i = [];
-                                return e.map(e => {
-                                    t.push(u({}, e)), i.push(u({}, e));
-                                }), {
-                                    initialData: t,
-                                    filteredData: i
-                                };
-                            }), c(this, "_filterMulipleRows", (e = [], t = [], i) => {
-                                const s = this.state.filteredData;
-
-                                if (!(0, l.isUndefined)(e)) {
-                                    t.map(e => {
-                                        this._updateCurrentFilter(e.value, !1, e.key);
-                                    }), e.map(e => {
-                                        this._updateCurrentFilter(e.value, !0, e.key);
-                                    });
-                                    let r = (0, n.filterActions)(s, t, !1, i);
-
-                                    if (r = (0, n.filterActions)(r.dataWithFilter, e, !0, i), !(0, l.isUndefined)(r)) {
-                                        const e = r.filteredArray,
-                                            t = r.dataWithFilter;
-                                        this.setState({
-                                            filteredData: t
-                                        }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
-                                    }
-                                }
-                            }), c(this, "_filterRows", (e, t, i = !0, s) => {
-                                const r = this.state.filteredData;
-
-                                if (!(0, l.isUndefined)(e) && !(0, l.isUndefined)(t)) {
-                                    this._updateCurrentFilters([e], i, t);
-
-                                    const a = (0, n.filterAction)(r, {
-                                        key: t,
-                                        value: e
-                                    }, i, s);
-
-                                    if (!(0, l.isUndefined)(a)) {
-                                        const e = a.filteredArray,
-                                            t = a.dataWithFilter;
-                                        this.setState({
-                                            filteredData: t
-                                        }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
-                                    }
-                                }
-                            }), c(this, "_updateCurrentFilter", (e, t = !0, i) => {
-                                if (!(0, l.isUndefined)(i, !0) && !(0, l.isUndefined)(e, !0)) if ((0, l.isUndefined)(this.currentFilters[i]) && (this.currentFilters[i] = []), t) this.currentFilters[i].indexOf(e) < 0 && this.currentFilters[i].push(e);else if (this.currentFilters[i].indexOf(e) >= 0) {
-                                    const t = this.currentFilters[i].indexOf(e);
-                                    this.currentFilters[i] = [...this.currentFilters[i].slice(0, t), ...this.currentFilters[i].slice(t + 1)];
-                                }
-                            }), c(this, "_updateCurrentFilters", (e = [], t = !0, i) => {
-                                (0, l.isUndefined)(e) || (0, l.isUndefined)(i) || e.map(e => {
-                                    this._updateCurrentFilter(e, t, i);
-                                });
-                            }), c(this, "_getCurrentFilters", () => this.currentFilters), c(this, "_resetRows", (e = [], t, i = !0, s) => {
-                                if (!(0, l.isUndefined)(t)) {
-                                    const r = this.state.filteredData;
-
-                                    this._updateCurrentFilters(e, !i, t);
-
-                                    const a = (0, n.filtersReset)(r, e, t, i, s);
-
-                                    if (!(0, l.isUndefined)(a)) {
-                                        const e = a.filteredArray,
-                                            t = a.dataWithFilter;
-                                        this.setState({
-                                            filteredData: t
-                                        }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
-                                    }
-                                }
-                            }), c(this, "_sortRows", (e, {
-                                valueFunc: t,
-                                caseSensitive: i = !1,
-                                key: s
-                            } = {}) => {
-                                if (!(0, l.isUndefined)(e)) {
-                                    const r = this.state.filteredData,
-                                        n = (0, a.sortAction)(r, e, {
-                                            valueFunc: t,
-                                            caseSensitive: i,
-                                            key: s
-                                        }),
-                                        o = [];
-                                    this.setState({
-                                        filteredData: n,
-                                        sortKey: s,
-                                        sortType: e
-                                    }), n.map(e => {
-                                        if ((0, l.isUndefined)(e.appliedFilters) || 0 === Object.keys(e.appliedFilters).length) {
-                                            const t = u({}, e);
-                                            delete t.appliedFilters, o.push(t);
-                                        }
-                                    }), this.props.onFilterUpdate && this.props.onFilterUpdate(o, this._getCurrentFilters());
-                                }
-                            }), c(this, "reset", (e, t = !0) => {
-                                t ? this.currentFilters = {} : e = this._applyInitialFilters(e);
-
-                                const i = this._createData(e);
-
+                            if (r = (0, n.filterActions)(r.dataWithFilter, e, !0, i), !(0, l.isUndefined)(r)) {
+                                const e = r.filteredArray,
+                                    t = r.dataWithFilter;
                                 this.setState({
-                                    initialData: i.initialData,
-                                    filteredData: i.filteredData
-                                });
-                            }), this.currentFilters = this.props.initialFilters || {};
-
-                            const t = this._applyInitialFilters(this.props.rows),
-                                i = this._createData(t);
-
-                            this.state = {
-                                initialData: i.initialData,
-                                filteredData: i.filteredData,
-                                sortKey: void 0
-                            };
-                        }
-
-                        render() {
-                            return r.default.call(this);
-                        }
-
-                    }
-
-                    p.propTypes = {
-                        rows: o.default.array.isRequired,
-                        onFilterUpdate: o.default.func.isRequired,
-                        rowClass: o.default.string,
-                        initialFilters: o.default.array,
-                        rowComponent: o.default.func,
-                        children: o.default.any
-                    };
-                    var f = p;
-                    t.default = f;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = a(i(0)),
-                        r = a(i(8)),
-                        l = i(2),
-                        n = (a(i(20)), i(4));
-
-                    function a(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
-
-                    function o() {
-                        return (o = Object.assign || function (e) {
-                            for (var t = 1; t < arguments.length; t++) {
-                                var i = arguments[t];
-
-                                for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
+                                    filteredData: t
+                                }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
                             }
+                        }
+                    }), c(this, "_filterRows", (e, t, i = !0, s) => {
+                        const r = this.state.filteredData;
 
-                            return e;
-                        }).apply(this, arguments);
-                    }
+                        if (!(0, l.isUndefined)(e) && !(0, l.isUndefined)(t)) {
+                            this._updateCurrentFilters([e], i, t);
 
-                    var d = function () {
-                        const e = this.props.children,
-                            t = [],
-                            {
-                                filteredData: i,
-                                sortType: a,
-                                sortKey: d
-                            } = this.state;
-                        let u;
-                        if (!(0, l.isUndefined)(e) && e.length > 0 ? s.default.Children.map(this.props.children, (e, u) => {
-                            if ((0, l.isUndefined)(e) || (0, l.isUndefined)(e.props.filterkey, !0)) {
-                                if (!(0, l.isUndefined)(e)) {
-                                    const i = s.default.cloneElement(e);
-                                    t.push(i);
+                            const a = (0, n.filterAction)(r, {
+                                key: t,
+                                value: e
+                            }, i, s);
+
+                            if (!(0, l.isUndefined)(a)) {
+                                const e = a.filteredArray,
+                                    t = a.dataWithFilter;
+                                this.setState({
+                                    filteredData: t
+                                }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
+                            }
+                        }
+                    }), c(this, "_updateCurrentFilter", (e, t = !0, i) => {
+                        if (!(0, l.isUndefined)(i, !0) && !(0, l.isUndefined)(e, !0)) if ((0, l.isUndefined)(this.currentFilters[i]) && (this.currentFilters[i] = []), t) this.currentFilters[i].indexOf(e) < 0 && this.currentFilters[i].push(e);else if (this.currentFilters[i].indexOf(e) >= 0) {
+                            const t = this.currentFilters[i].indexOf(e);
+                            this.currentFilters[i] = [...this.currentFilters[i].slice(0, t), ...this.currentFilters[i].slice(t + 1)];
+                        }
+                    }), c(this, "_updateCurrentFilters", (e = [], t = !0, i) => {
+                        (0, l.isUndefined)(e) || (0, l.isUndefined)(i) || e.map(e => {
+                            this._updateCurrentFilter(e, t, i);
+                        });
+                    }), c(this, "_getCurrentFilters", () => this.currentFilters), c(this, "_resetRows", (e = [], t, i = !0, s) => {
+                        if (!(0, l.isUndefined)(t)) {
+                            const r = this.state.filteredData;
+
+                            this._updateCurrentFilters(e, !i, t);
+
+                            const a = (0, n.filtersReset)(r, e, t, i, s);
+
+                            if (!(0, l.isUndefined)(a)) {
+                                const e = a.filteredArray,
+                                    t = a.dataWithFilter;
+                                this.setState({
+                                    filteredData: t
+                                }), this.props.onFilterUpdate && this.props.onFilterUpdate(e, this._getCurrentFilters());
+                            }
+                        }
+                    }), c(this, "_sortRows", (e, {
+                        valueFunc: t,
+                        caseSensitive: i = !1,
+                        key: s
+                    } = {}) => {
+                        if (!(0, l.isUndefined)(e)) {
+                            const r = this.state.filteredData,
+                                n = (0, a.sortAction)(r, e, {
+                                    valueFunc: t,
+                                    caseSensitive: i,
+                                    key: s
+                                }),
+                                o = [];
+                            this.setState({
+                                filteredData: n,
+                                sortKey: s,
+                                sortType: e
+                            }), n.map(e => {
+                                if ((0, l.isUndefined)(e.appliedFilters) || 0 === Object.keys(e.appliedFilters).length) {
+                                    const t = u({}, e);
+                                    delete t.appliedFilters, o.push(t);
                                 }
-                            } else {
-                                let c = e.props.className,
-                                    p = e.props.children || [];
-                                const {
-                                    filterkey: f,
-                                    itemDisplayValueFunc: h,
-                                    itemSortValueFunc: y
-                                } = e.props;
-                                (0, l.isTypeArray)(p) || (p = [p]), c = (0, l.isUndefined)(c, !0) ? "apply-filter" : [c, " ", "apply-filter"].join("");
+                            }), this.props.onFilterUpdate && this.props.onFilterUpdate(o, this._getCurrentFilters());
+                        }
+                    }), c(this, "reset", (e, t = !0) => {
+                        t ? this.currentFilters = {} : e = this._applyInitialFilters(e);
 
-                                const _ = (0, n.calculateFilterProps)({
-                                    filteredData: i,
-                                    filterkey: f,
-                                    itemDisplayValueFunc: h,
-                                    itemSortValueFunc: y,
-                                    sortKey: d,
-                                    sortType: a
-                                });
+                        const i = this._createData(e);
 
-                                "true" != e.props.filterAdded ? p.push(s.default.createElement(r.default, o({}, e.props, _, {
-                                    key: "list_" + u,
-                                    filterRows: this._filterRows,
-                                    filterMultipleRows: this._filterMulipleRows,
-                                    resetRows: this._resetRows,
-                                    sortRows: this._sortRows
-                                }))) : p[p.length - 1] = s.default.createElement(r.default, o({}, e.props, _, {
-                                    key: "list_" + u,
-                                    filterRows: this._filterRows,
-                                    filterMultipleRows: this._filterMulipleRows,
-                                    resetRows: this._resetRows,
-                                    sortRows: this._sortRows
-                                }));
-                                const m = {
-                                        className: c,
-                                        filteradded: "true"
-                                    },
-                                    b = s.default.cloneElement(e, m, [...p]);
-                                t.push(b);
-                            }
-                        }) : console.error("TableFilter Error: Should contain one or more children"), (0, l.isUndefined)(this.props.rowComponent)) u = s.default.createElement("tr", {
+                        this.setState({
+                            initialData: i.initialData,
+                            filteredData: i.filteredData
+                        });
+                    }), this.currentFilters = this.props.initialFilters || {};
+
+                    const t = this._applyInitialFilters(this.props.rows),
+                        i = this._createData(t);
+
+                    this.state = {
+                        initialData: i.initialData,
+                        filteredData: i.filteredData,
+                        sortKey: void 0
+                    };
+                }
+
+                render() {
+                    return r.default.call(this);
+                }
+
+            }
+
+            p.propTypes = {
+                rows: o.default.array.isRequired,
+                onFilterUpdate: o.default.func.isRequired,
+                rowClass: o.default.string,
+                initialFilters: o.default.array,
+                rowComponent: o.default.func,
+                children: o.default.any
+            };
+            var f = p;
+            t.default = f;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = a(i(0)),
+                r = a(i(8)),
+                l = i(2),
+                n = (a(i(20)), i(4));
+
+            function a(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            function o() {
+                return (o = Object.assign || function (e) {
+                    for (var t = 1; t < arguments.length; t++) {
+                        var i = arguments[t];
+
+                        for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s]);
+                    }
+
+                    return e;
+                }).apply(this, arguments);
+            }
+
+            var d = function () {
+                const e = this.props.children,
+                    t = [],
+                    {
+                        filteredData: i,
+                        sortType: a,
+                        sortKey: d
+                    } = this.state;
+                let u;
+                if (!(0, l.isUndefined)(e) && e.length > 0 ? s.default.Children.map(this.props.children, (e, u) => {
+                    if ((0, l.isUndefined)(e) || (0, l.isUndefined)(e.props.filterkey, !0)) {
+                        if (!(0, l.isUndefined)(e)) {
+                            const i = s.default.cloneElement(e);
+                            t.push(i);
+                        }
+                    } else {
+                        let c = e.props.className,
+                            p = e.props.children || [];
+                        const {
+                            filterkey: f,
+                            itemDisplayValueFunc: h,
+                            itemSortValueFunc: y
+                        } = e.props;
+                        (0, l.isTypeArray)(p) || (p = [p]), c = (0, l.isUndefined)(c, !0) ? "apply-filter" : [c, " ", "apply-filter"].join("");
+
+                        const _ = (0, n.calculateFilterProps)({
+                            filteredData: i,
+                            filterkey: f,
+                            itemDisplayValueFunc: h,
+                            itemSortValueFunc: y,
+                            sortKey: d,
+                            sortType: a
+                        });
+
+                        "true" != e.props.filterAdded ? p.push(s.default.createElement(r.default, o({}, e.props, _, {
+                            key: "list_" + u,
+                            filterRows: this._filterRows,
+                            filterMultipleRows: this._filterMulipleRows,
+                            resetRows: this._resetRows,
+                            sortRows: this._sortRows
+                        }))) : p[p.length - 1] = s.default.createElement(r.default, o({}, e.props, _, {
+                            key: "list_" + u,
+                            filterRows: this._filterRows,
+                            filterMultipleRows: this._filterMulipleRows,
+                            resetRows: this._resetRows,
+                            sortRows: this._sortRows
+                        }));
+                        const m = {
+                                className: c,
+                                filteradded: "true"
+                            },
+                            b = s.default.cloneElement(e, m, [...p]);
+                        t.push(b);
+                    }
+                }) : console.error("TableFilter Error: Should contain one or more children"), (0, l.isUndefined)(this.props.rowComponent)) u = s.default.createElement("tr", {
+                    className: [this.props.rowClass ? this.props.rowClass + " " : "", "table-filter-row"].join("")
+                }, t);else {
+                    const e = this.props.rowComponent,
+                        i = {
                             className: [this.props.rowClass ? this.props.rowClass + " " : "", "table-filter-row"].join("")
-                        }, t);else {
-                            const e = this.props.rowComponent,
-                                i = {
-                                    className: [this.props.rowClass ? this.props.rowClass + " " : "", "table-filter-row"].join("")
-                                };
-                            u = s.default.cloneElement(e, i, [...t]);
-                        }
-                        return u;
-                    };
-
-                    t.default = d;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = f(i(0)),
-                        r = f(i(9)),
-                        l = f(i(12)),
-                        n = f(i(13)),
-                        a = f(i(14)),
-                        o = f(i(18)),
-                        d = f(i(19)),
-                        u = f(i(1)),
-                        c = i(3),
-                        p = i(2);
-
-                    function f(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
                         };
-                    }
+                    u = s.default.cloneElement(e, i, [...t]);
+                }
+                return u;
+            };
 
-                    function h(e, t, i) {
-                        return t in e ? Object.defineProperty(e, t, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = i, e;
-                    }
+            t.default = d;
+        }, function (e, t, i) {
+            "use strict";
 
-                    class y extends s.default.Component {
-                        constructor(e) {
-                            super(e), h(this, "_handleOutsideClick", e => {
-                                this.filterIconNode.contains(e.target) || this._hideFilter();
-                            }), h(this, "_filterIconClicked", e => {
-                                !this.state.showFilter ? this._displayFilter() : this._hideFilter();
-                            }), h(this, "_displayFilter", () => {
-                                a.default.sub("click", this._handleOutsideClick), this.setState({
-                                    showFilter: !0
-                                });
-                            }), h(this, "_hideFilter", () => {
-                                a.default.unsub("click", this._handleOutsideClick), this.setState({
-                                    showFilter: !1,
-                                    searchEnabled: !1
-                                });
-                            }), h(this, "_filterUpdated", e => {
-                                const t = this.props.filterList;
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = f(i(0)),
+                r = f(i(9)),
+                l = f(i(12)),
+                n = f(i(13)),
+                a = f(i(14)),
+                o = f(i(18)),
+                d = f(i(19)),
+                u = f(i(1)),
+                c = i(3),
+                p = i(2);
 
-                                if (!(0, p.isUndefined)(t[e])) {
-                                    const i = !t[e].selected;
+            function f(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
 
-                                    this._filterData(t[e].key, !i);
-                                }
-                            }), h(this, "_selectAllClicked", () => {
-                                const e = !this.props.selectAllFilters;
-                                if (this.state.searchEnabled) return;
-                                const t = this.props.filterList.filter(t => e ? t.visible && !t.selected : t.visible && t.selected).map(e => e.key);
+            function h(e, t, i) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: i,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = i, e;
+            }
 
-                                this._resetData(t, e);
-                            }), h(this, "_filterData", (e, t = !0) => {
-                                this.props.filterRows(e, this.props.filterkey, t, this.props.itemDisplayValueFunc);
-                            }), h(this, "_resetData", (e = [], t = !0) => {
-                                this.props.resetRows(e, this.props.filterkey, t, this.props.itemDisplayValueFunc);
-                            }), h(this, "_sortClicked", () => {
-                                const e = this.props.sortType;
-                                let t;
-                                t = (0, p.isUndefined)(e) || e === c.DSC_VALUE ? c.ASC_VALUE : c.DSC_VALUE, this.props.sortRows(t, {
-                                    itemSortValueFunc: this.props.itemSortValueFunc,
-                                    caseSensitive: "true" === this.props.casesensitive,
-                                    key: this.props.filterkey
-                                });
-                            }), h(this, "_searchChanged", e => {
-                                const t = this.props.filterkey;
-                                this.searchValue = e;
-                                const i = this.appliedSearchFilters;
-                                if ((0, p.isUndefined)(e, !0)) this.setState({
-                                    searchEnabled: !1
-                                }), this.appliedSearchFilters = [], this.props.filterMultipleRows([], i, this.props.itemDisplayValueFunc);else {
-                                    this.setState({
-                                        searchEnabled: !0
-                                    }), e = e.toLowerCase();
-                                    const s = this.props.filterList.filter(t => !!(t.key.toString().toLowerCase().indexOf(e) < 0 && t.visible)).map(e => ({
-                                        key: t,
-                                        value: e.key
-                                    }));
-                                    this.appliedSearchFilters = s, this.props.filterMultipleRows(s, i, this.props.itemDisplayValueFunc);
-                                }
-                            }), this.appliedSearchFilters = void 0, this.searchValue = void 0, this.state = {
-                                showFilter: !1,
-                                searchEnabled: !1
-                            };
+            class y extends s.default.Component {
+                constructor(e) {
+                    super(e), h(this, "_handleOutsideClick", e => {
+                        this.filterIconNode.contains(e.target) || this._hideFilter();
+                    }), h(this, "_filterIconClicked", e => {
+                        !this.state.showFilter ? this._displayFilter() : this._hideFilter();
+                    }), h(this, "_displayFilter", () => {
+                        a.default.sub("click", this._handleOutsideClick), this.setState({
+                            showFilter: !0
+                        });
+                    }), h(this, "_hideFilter", () => {
+                        a.default.unsub("click", this._handleOutsideClick), this.setState({
+                            showFilter: !1,
+                            searchEnabled: !1
+                        });
+                    }), h(this, "_filterUpdated", e => {
+                        const t = this.props.filterList;
+
+                        if (!(0, p.isUndefined)(t[e])) {
+                            const i = !t[e].selected;
+
+                            this._filterData(t[e].key, !i);
                         }
+                    }), h(this, "_selectAllClicked", () => {
+                        const e = !this.props.selectAllFilters;
+                        if (this.state.searchEnabled) return;
+                        const t = this.props.filterList.filter(t => e ? t.visible && !t.selected : t.visible && t.selected).map(e => e.key);
 
-                        componentWillUnmount() {
-                            a.default.unsub("click", this._handleOutsideClick);
+                        this._resetData(t, e);
+                    }), h(this, "_filterData", (e, t = !0) => {
+                        this.props.filterRows(e, this.props.filterkey, t, this.props.itemDisplayValueFunc);
+                    }), h(this, "_resetData", (e = [], t = !0) => {
+                        this.props.resetRows(e, this.props.filterkey, t, this.props.itemDisplayValueFunc);
+                    }), h(this, "_sortClicked", () => {
+                        const e = this.props.sortType;
+                        let t;
+                        t = (0, p.isUndefined)(e) || e === c.DSC_VALUE ? c.ASC_VALUE : c.DSC_VALUE, this.props.sortRows(t, {
+                            itemSortValueFunc: this.props.itemSortValueFunc,
+                            caseSensitive: "true" === this.props.casesensitive,
+                            key: this.props.filterkey
+                        });
+                    }), h(this, "_searchChanged", e => {
+                        const t = this.props.filterkey;
+                        this.searchValue = e;
+                        const i = this.appliedSearchFilters;
+                        if ((0, p.isUndefined)(e, !0)) this.setState({
+                            searchEnabled: !1
+                        }), this.appliedSearchFilters = [], this.props.filterMultipleRows([], i, this.props.itemDisplayValueFunc);else {
+                            this.setState({
+                                searchEnabled: !0
+                            }), e = e.toLowerCase();
+                            const s = this.props.filterList.filter(t => !!(t.key.toString().toLowerCase().indexOf(e) < 0 && t.visible)).map(e => ({
+                                key: t,
+                                value: e.key
+                            }));
+                            this.appliedSearchFilters = s, this.props.filterMultipleRows(s, i, this.props.itemDisplayValueFunc);
                         }
+                    }), this.appliedSearchFilters = void 0, this.searchValue = void 0, this.state = {
+                        showFilter: !1,
+                        searchEnabled: !1
+                    };
+                }
 
-                        render() {
-                            const e = this.state.showFilter,
-                                t = "false" !== this.props.showsearch,
-                                i = [];
-                            let a;
+                componentWillUnmount() {
+                    a.default.unsub("click", this._handleOutsideClick);
+                }
 
-                            if (this.props.filterList.length > 1) {
-                                if (e) {
-                                    const e = t ? s.default.createElement(n.default, {
-                                        searchChanged: this._searchChanged
-                                    }) : null;
-                                    this.props.filterList.map((e, t) => {
-                                        if (e.visible) {
-                                            if (this.state.searchEnabled) {
-                                                return e.key.toString().toLowerCase().indexOf(this.searchValue.toLowerCase()) >= 0 ? i.push(s.default.createElement(r.default, {
-                                                    key: "item_" + t,
-                                                    filterClicked: this._filterUpdated,
-                                                    index: t,
-                                                    label: e.display,
-                                                    selected: e.selected
-                                                })) : null;
-                                            }
+                render() {
+                    const e = this.state.showFilter,
+                        t = "false" !== this.props.showsearch,
+                        i = [];
+                    let a;
 
-                                            i.push(s.default.createElement(r.default, {
-                                                key: "item_" + t,
-                                                filterClicked: this._filterUpdated,
-                                                index: t,
-                                                label: e.display,
-                                                selected: e.selected
-                                            }));
-                                        }
-                                    });
-                                    const o = ["true" === this.props.alignleft ? "align-left " : "", "filter-list"].join("");
-                                    a = s.default.createElement("div", {
-                                        className: o
-                                    }, e, s.default.createElement(d.default, {
-                                        sort: this._sortClicked,
-                                        sortType: this.props.sortType
-                                    }), s.default.createElement(l.default, {
-                                        filterClicked: this._selectAllClicked,
-                                        selected: this.props.selectAllFilters
-                                    }), i);
-                                }
-
-                                const u = !this.props.selectAllFilters || e;
-                                return s.default.createElement("div", {
-                                    className: "table-filter-parent",
-                                    ref: e => {
-                                        this.filterIconNode = e;
+                    if (this.props.filterList.length > 1) {
+                        if (e) {
+                            const e = t ? s.default.createElement(n.default, {
+                                searchChanged: this._searchChanged
+                            }) : null;
+                            this.props.filterList.map((e, t) => {
+                                if (e.visible) {
+                                    if (this.state.searchEnabled) {
+                                        return e.key.toString().toLowerCase().indexOf(this.searchValue.toLowerCase()) >= 0 ? i.push(s.default.createElement(r.default, {
+                                            key: "item_" + t,
+                                            filterClicked: this._filterUpdated,
+                                            index: t,
+                                            label: e.display,
+                                            selected: e.selected
+                                        })) : null;
                                     }
-                                }, s.default.createElement(o.default, {
-                                    iconClicked: this._filterIconClicked,
-                                    selected: u
-                                }), a);
-                            }
 
-                            return s.default.createElement("div", {
-                                style: {
-                                    display: "none"
+                                    i.push(s.default.createElement(r.default, {
+                                        key: "item_" + t,
+                                        filterClicked: this._filterUpdated,
+                                        index: t,
+                                        label: e.display,
+                                        selected: e.selected
+                                    }));
                                 }
                             });
+                            const o = ["true" === this.props.alignleft ? "align-left " : "", "filter-list"].join("");
+                            a = s.default.createElement("div", {
+                                className: o
+                            }, e, s.default.createElement(d.default, {
+                                sort: this._sortClicked,
+                                sortType: this.props.sortType
+                            }), s.default.createElement(l.default, {
+                                filterClicked: this._selectAllClicked,
+                                selected: this.props.selectAllFilters
+                            }), i);
                         }
 
-                    }
-
-                    y.propTypes = {
-                        filterRows: u.default.func.isRequired,
-                        resetRows: u.default.func.isRequired,
-                        sortRows: u.default.func.isRequired,
-                        sortType: u.default.string,
-                        filterkey: u.default.string.isRequired,
-                        itemDisplayValueFunc: u.default.func,
-                        itemSortValueFunc: u.default.func,
-                        casesensitive: u.default.string,
-                        filterMultipleRows: u.default.func.isRequired,
-                        showsearch: u.default.string,
-                        alignleft: u.default.string,
-                        filterList: u.default.array,
-                        selectAllFilters: u.default.bool
-                    };
-                    var _ = y;
-                    t.default = _;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = l(i(0)),
-                        r = l(i(1));
-
-                    function l(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
-
-                    class n extends s.default.Component {
-                        constructor(e) {
-                            var t, i, s;
-                            super(e), s = () => {
-                                this.props.filterClicked(this.props.index);
-                            }, (i = "_checkBoxClicked") in (t = this) ? Object.defineProperty(t, i, {
-                                value: s,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : t[i] = s;
-                        }
-
-                        render() {
-                            const e = [this.props.selected ? "selected " : "", "filter-check-box"].join("");
-                            return s.default.createElement("div", {
-                                className: "filter-list-item ripple",
-                                onClick: this._checkBoxClicked
-                            }, s.default.createElement("div", {
-                                className: e
-                            }), s.default.createElement("div", {
-                                className: "filter-label"
-                            }, this.props.label));
-                        }
-
-                    }
-
-                    n.propTypes = {
-                        filterClicked: r.default.func.isRequired,
-                        index: r.default.number.isRequired,
-                        label: r.default.any.isRequired,
-                        selected: r.default.bool.isRequired
-                    };
-                    var a = n;
-                    t.default = a;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    var s = i(11);
-
-                    function r() {}
-
-                    function l() {}
-
-                    l.resetWarningCache = r, e.exports = function () {
-                        function e(e, t, i, r, l, n) {
-                            if (n !== s) {
-                                var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-                                throw a.name = "Invariant Violation", a;
+                        const u = !this.props.selectAllFilters || e;
+                        return s.default.createElement("div", {
+                            className: "table-filter-parent",
+                            ref: e => {
+                                this.filterIconNode = e;
                             }
-                        }
+                        }, s.default.createElement(o.default, {
+                            iconClicked: this._filterIconClicked,
+                            selected: u
+                        }), a);
+                    }
 
-                        function t() {
-                            return e;
+                    return s.default.createElement("div", {
+                        style: {
+                            display: "none"
                         }
+                    });
+                }
 
-                        e.isRequired = e;
-                        var i = {
-                            array: e,
-                            bool: e,
-                            func: e,
-                            number: e,
-                            object: e,
-                            string: e,
-                            symbol: e,
-                            any: e,
-                            arrayOf: t,
-                            element: e,
-                            elementType: e,
-                            instanceOf: t,
-                            node: e,
-                            objectOf: t,
-                            oneOf: t,
-                            oneOfType: t,
-                            shape: t,
-                            exact: t,
-                            checkPropTypes: l,
-                            resetWarningCache: r
-                        };
-                        return i.PropTypes = i, i;
+            }
+
+            y.propTypes = {
+                filterRows: u.default.func.isRequired,
+                resetRows: u.default.func.isRequired,
+                sortRows: u.default.func.isRequired,
+                sortType: u.default.string,
+                filterkey: u.default.string.isRequired,
+                itemDisplayValueFunc: u.default.func,
+                itemSortValueFunc: u.default.func,
+                casesensitive: u.default.string,
+                filterMultipleRows: u.default.func.isRequired,
+                showsearch: u.default.string,
+                alignleft: u.default.string,
+                filterList: u.default.array,
+                selectAllFilters: u.default.bool
+            };
+            var _ = y;
+            t.default = _;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = l(i(0)),
+                r = l(i(1));
+
+            function l(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            class n extends s.default.Component {
+                constructor(e) {
+                    var t, i, s;
+                    super(e), s = () => {
+                        this.props.filterClicked(this.props.index);
+                    }, (i = "_checkBoxClicked") in (t = this) ? Object.defineProperty(t, i, {
+                        value: s,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[i] = s;
+                }
+
+                render() {
+                    const e = [this.props.selected ? "selected " : "", "filter-check-box"].join("");
+                    return s.default.createElement("div", {
+                        className: "filter-list-item ripple",
+                        onClick: this._checkBoxClicked
+                    }, s.default.createElement("div", {
+                        className: e
+                    }), s.default.createElement("div", {
+                        className: "filter-label"
+                    }, this.props.label));
+                }
+
+            }
+
+            n.propTypes = {
+                filterClicked: r.default.func.isRequired,
+                index: r.default.number.isRequired,
+                label: r.default.any.isRequired,
+                selected: r.default.bool.isRequired
+            };
+            var a = n;
+            t.default = a;
+        }, function (e, t, i) {
+            "use strict";
+
+            var s = i(11);
+
+            function r() {}
+
+            function l() {}
+
+            l.resetWarningCache = r, e.exports = function () {
+                function e(e, t, i, r, l, n) {
+                    if (n !== s) {
+                        var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+                        throw a.name = "Invariant Violation", a;
+                    }
+                }
+
+                function t() {
+                    return e;
+                }
+
+                e.isRequired = e;
+                var i = {
+                    array: e,
+                    bool: e,
+                    func: e,
+                    number: e,
+                    object: e,
+                    string: e,
+                    symbol: e,
+                    any: e,
+                    arrayOf: t,
+                    element: e,
+                    elementType: e,
+                    instanceOf: t,
+                    node: e,
+                    objectOf: t,
+                    oneOf: t,
+                    oneOfType: t,
+                    shape: t,
+                    exact: t,
+                    checkPropTypes: l,
+                    resetWarningCache: r
+                };
+                return i.PropTypes = i, i;
+            };
+        }, function (e, t, i) {
+            "use strict";
+
+            e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = l(i(0)),
+                r = l(i(1));
+
+            function l(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            class n extends s.default.Component {
+                constructor(e) {
+                    var t, i, s;
+                    super(e), s = () => {
+                        this.props.filterClicked();
+                    }, (i = "_selectAllClicked") in (t = this) ? Object.defineProperty(t, i, {
+                        value: s,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[i] = s;
+                }
+
+                render() {
+                    const e = [this.props.selected ? "selected " : "", "filter-check-box"].join("");
+                    return s.default.createElement("div", {
+                        className: "filter-list-item",
+                        onClick: this._selectAllClicked
+                    }, s.default.createElement("div", {
+                        className: e
+                    }), s.default.createElement("div", {
+                        className: "filter-label select-all-label"
+                    }, "Select All"));
+                }
+
+            }
+
+            n.propTypes = {
+                filterClicked: r.default.func.isRequired,
+                selected: r.default.bool.isRequired
+            };
+            var a = n;
+            t.default = a;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = l(i(0)),
+                r = l(i(1));
+
+            function l(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            function n(e, t, i) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: i,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = i, e;
+            }
+
+            class a extends s.default.Component {
+                constructor(e) {
+                    super(e), n(this, "_searchInputChanged", e => {
+                        const t = e.target.value;
+
+                        this._callSearchChanged(t);
+                    }), n(this, "_callSearchChanged", e => {
+                        this.props.searchChanged && this.props.searchChanged(e);
+                    });
+                }
+
+                render() {
+                    return s.default.createElement("div", {
+                        className: "search-parent filter-list-item"
+                    }, s.default.createElement("input", {
+                        className: "search-input",
+                        type: "text",
+                        placeholder: "search",
+                        onChange: this._searchInputChanged
+                    }));
+                }
+
+            }
+
+            a.propTypes = {
+                searchChanged: r.default.func.isRequired
+            };
+            var o = a;
+            t.default = o;
+        }, function (e, t, i) {
+            "use strict";
+
+            var s;
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var r = ((s = i(15)) && s.__esModule ? s : {
+                default: s
+            }).default;
+            t.default = r;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = l(i(16)),
+                r = l(i(17));
+
+            function l(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
+
+            var n = new class {
+                constructor() {
+                    this._targets = new Map();
+                }
+
+                _find(e, t = !0) {
+                    const i = (0, r.default)(e);
+                    if (this._targets.has(i)) return this._targets.get(i);
+                    if (!t) return;
+                    const l = new s.default(i);
+                    return this._targets.set(i, l), l;
+                }
+
+                _remove(e) {
+                    const t = (0, r.default)(e);
+
+                    this._targets.delete(t);
+                }
+
+                sub(e, t, i = {}) {
+                    const {
+                        target: s = document,
+                        pool: r = "default"
+                    } = i;
+
+                    this._find(s).sub(e, t, r);
+                }
+
+                unsub(e, t, i = {}) {
+                    const {
+                            target: s = document,
+                            pool: r = "default"
+                        } = i,
+                        l = this._find(s, !1);
+
+                    l && (l.unsub(e, t, r), l.empty() && this._remove(s));
+                }
+
+            }();
+            t.default = n;
+        }, function (e, t, i) {
+            "use strict";
+
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = i(2);
+            t.default = class {
+                constructor(e) {
+                    this.target = e, this._handlers = {}, this._pools = {};
+                }
+
+                _emit(e) {
+                    return e => {
+                        Object.keys(this._pools).forEach(t => {
+                            const i = this._pools[t];
+                            i && i.forEach(t => t(e));
+                        });
                     };
-                }, function (e, t, i) {
-                    "use strict";
+                }
 
-                    e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
-                }, function (e, t, i) {
-                    "use strict";
+                _normalize(e) {
+                    return (0, s.isTypeArray)(e) ? e : [e];
+                }
 
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = l(i(0)),
-                        r = l(i(1));
+                _listen(e) {
+                    if (this._handlers.hasOwnProperty(e)) return;
 
-                    function l(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
+                    const t = this._emit(e);
 
-                    class n extends s.default.Component {
-                        constructor(e) {
-                            var t, i, s;
-                            super(e), s = () => {
-                                this.props.filterClicked();
-                            }, (i = "_selectAllClicked") in (t = this) ? Object.defineProperty(t, i, {
-                                value: s,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : t[i] = s;
-                        }
+                    this.target.addEventListener(e, t), this._handlers[e] = t;
+                }
 
-                        render() {
-                            const e = [this.props.selected ? "selected " : "", "filter-check-box"].join("");
-                            return s.default.createElement("div", {
-                                className: "filter-list-item",
-                                onClick: this._selectAllClicked
-                            }, s.default.createElement("div", {
-                                className: e
-                            }), s.default.createElement("div", {
-                                className: "filter-label select-all-label"
-                            }, "Select All"));
-                        }
+                _unlisten(e) {
+                    if (this._pools[e]) return;
+                    const t = this._handlers[e];
+                    this.target.removeEventListener(e, t), delete this._handlers[e];
+                }
 
-                    }
+                empty() {
+                    return !(this._handlers && Object.keys(this._handlers).length > 0);
+                }
 
-                    n.propTypes = {
-                        filterClicked: r.default.func.isRequired,
-                        selected: r.default.bool.isRequired
-                    };
-                    var a = n;
-                    t.default = a;
-                }, function (e, t, i) {
-                    "use strict";
+                sub(e, t) {
+                    const i = this._normalize(t),
+                        r = this._pools["" + e] || [],
+                        l = (0, s.uniq)([...r, ...i]);
 
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = l(i(0)),
-                        r = l(i(1));
+                    this._listen(e), this._pools["" + e] = l;
+                }
 
-                    function l(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
+                unsub(e, t) {
+                    const i = this._normalize(t),
+                        r = this._pools["" + e] || [],
+                        l = (0, s.without)(r, i);
 
-                    function n(e, t, i) {
-                        return t in e ? Object.defineProperty(e, t, {
-                            value: i,
-                            enumerable: !0,
-                            configurable: !0,
-                            writable: !0
-                        }) : e[t] = i, e;
-                    }
+                    l.length > 0 ? this._pools["" + e] = l : (this._pools["" + e] = void 0, this._unlisten(e));
+                }
 
-                    class a extends s.default.Component {
-                        constructor(e) {
-                            super(e), n(this, "_searchInputChanged", e => {
-                                const t = e.target.value;
+            };
+        }, function (e, t, i) {
+            "use strict";
 
-                                this._callSearchChanged(t);
-                            }), n(this, "_callSearchChanged", e => {
-                                this.props.searchChanged && this.props.searchChanged(e);
-                            });
-                        }
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
 
-                        render() {
-                            return s.default.createElement("div", {
-                                className: "search-parent filter-list-item"
-                            }, s.default.createElement("input", {
-                                className: "search-input",
-                                type: "text",
-                                placeholder: "search",
-                                onChange: this._searchInputChanged
-                            }));
-                        }
+            var s = e => "document" === e ? document : "window" === e ? window : e || document;
 
-                    }
+            t.default = s;
+        }, function (e, t, i) {
+            "use strict";
 
-                    a.propTypes = {
-                        searchChanged: r.default.func.isRequired
-                    };
-                    var o = a;
-                    t.default = o;
-                }, function (e, t, i) {
-                    "use strict";
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = l(i(0)),
+                r = l(i(1));
 
-                    var s;
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var r = ((s = i(15)) && s.__esModule ? s : {
-                        default: s
-                    }).default;
-                    t.default = r;
-                }, function (e, t, i) {
-                    "use strict";
+            function l(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
 
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = l(i(16)),
-                        r = l(i(17));
+            class n extends s.default.Component {
+                constructor(e) {
+                    var t, i, s;
+                    super(e), s = () => {
+                        this.props.iconClicked && this.props.iconClicked();
+                    }, (i = "_iconClicked") in (t = this) ? Object.defineProperty(t, i, {
+                        value: s,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[i] = s;
+                }
 
-                    function l(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
+                render() {
+                    const e = [this.props.selected ? "selected " : "", "table-filter-icon"].join("");
+                    return s.default.createElement("div", {
+                        onClick: this._iconClicked,
+                        className: e
+                    });
+                }
 
-                    var n = new class {
-                        constructor() {
-                            this._targets = new Map();
-                        }
+            }
 
-                        _find(e, t = !0) {
-                            const i = (0, r.default)(e);
-                            if (this._targets.has(i)) return this._targets.get(i);
-                            if (!t) return;
-                            const l = new s.default(i);
-                            return this._targets.set(i, l), l;
-                        }
+            n.propTypes = {
+                iconClicked: r.default.func.isRequired,
+                selected: r.default.bool
+            };
+            var a = n;
+            t.default = a;
+        }, function (e, t, i) {
+            "use strict";
 
-                        _remove(e) {
-                            const t = (0, r.default)(e);
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            }), t.default = void 0;
+            var s = n(i(0)),
+                r = i(2),
+                l = n(i(1));
 
-                            this._targets.delete(t);
-                        }
+            function n(e) {
+                return e && e.__esModule ? e : {
+                    default: e
+                };
+            }
 
-                        sub(e, t, i = {}) {
-                            const {
-                                target: s = document,
-                                pool: r = "default"
-                            } = i;
+            class a extends s.default.Component {
+                constructor(e) {
+                    var t, i, s;
+                    super(e), s = () => {
+                        this.props.sort();
+                    }, (i = "_sortClicked") in (t = this) ? Object.defineProperty(t, i, {
+                        value: s,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[i] = s;
+                }
 
-                            this._find(s).sub(e, t, r);
-                        }
+                render() {
+                    const e = (0, r.isUndefined)(this.props.sortType) ? "" : " " + this.props.sortType;
+                    return s.default.createElement("div", {
+                        className: ["sort-parent clear-fix", e].join(""),
+                        onClick: this._sortClicked
+                    }, s.default.createElement("div", {
+                        className: "dsc table-filter-arrow"
+                    }), s.default.createElement("div", {
+                        className: "asc table-filter-arrow"
+                    }));
+                }
 
-                        unsub(e, t, i = {}) {
-                            const {
-                                    target: s = document,
-                                    pool: r = "default"
-                                } = i,
-                                l = this._find(s, !1);
+            }
 
-                            l && (l.unsub(e, t, r), l.empty() && this._remove(s));
-                        }
+            a.propTypes = {
+                sort: l.default.func.isRequired,
+                sortType: l.default.string
+            };
+            var o = a;
+            t.default = o;
+        }, function (e, t) {}]);
+    });
 
-                    }();
-                    t.default = n;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = i(2);
-                    t.default = class {
-                        constructor(e) {
-                            this.target = e, this._handlers = {}, this._pools = {};
-                        }
-
-                        _emit(e) {
-                            return e => {
-                                Object.keys(this._pools).forEach(t => {
-                                    const i = this._pools[t];
-                                    i && i.forEach(t => t(e));
-                                });
-                            };
-                        }
-
-                        _normalize(e) {
-                            return (0, s.isTypeArray)(e) ? e : [e];
-                        }
-
-                        _listen(e) {
-                            if (this._handlers.hasOwnProperty(e)) return;
-
-                            const t = this._emit(e);
-
-                            this.target.addEventListener(e, t), this._handlers[e] = t;
-                        }
-
-                        _unlisten(e) {
-                            if (this._pools[e]) return;
-                            const t = this._handlers[e];
-                            this.target.removeEventListener(e, t), delete this._handlers[e];
-                        }
-
-                        empty() {
-                            return !(this._handlers && Object.keys(this._handlers).length > 0);
-                        }
-
-                        sub(e, t) {
-                            const i = this._normalize(t),
-                                r = this._pools["" + e] || [],
-                                l = (0, s.uniq)([...r, ...i]);
-
-                            this._listen(e), this._pools["" + e] = l;
-                        }
-
-                        unsub(e, t) {
-                            const i = this._normalize(t),
-                                r = this._pools["" + e] || [],
-                                l = (0, s.without)(r, i);
-
-                            l.length > 0 ? this._pools["" + e] = l : (this._pools["" + e] = void 0, this._unlisten(e));
-                        }
-
-                    };
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-
-                    var s = e => "document" === e ? document : "window" === e ? window : e || document;
-
-                    t.default = s;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = l(i(0)),
-                        r = l(i(1));
-
-                    function l(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
-
-                    class n extends s.default.Component {
-                        constructor(e) {
-                            var t, i, s;
-                            super(e), s = () => {
-                                this.props.iconClicked && this.props.iconClicked();
-                            }, (i = "_iconClicked") in (t = this) ? Object.defineProperty(t, i, {
-                                value: s,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : t[i] = s;
-                        }
-
-                        render() {
-                            const e = [this.props.selected ? "selected " : "", "table-filter-icon"].join("");
-                            return s.default.createElement("div", {
-                                onClick: this._iconClicked,
-                                className: e
-                            });
-                        }
-
-                    }
-
-                    n.propTypes = {
-                        iconClicked: r.default.func.isRequired,
-                        selected: r.default.bool
-                    };
-                    var a = n;
-                    t.default = a;
-                }, function (e, t, i) {
-                    "use strict";
-
-                    Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }), t.default = void 0;
-                    var s = n(i(0)),
-                        r = i(2),
-                        l = n(i(1));
-
-                    function n(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        };
-                    }
-
-                    class a extends s.default.Component {
-                        constructor(e) {
-                            var t, i, s;
-                            super(e), s = () => {
-                                this.props.sort();
-                            }, (i = "_sortClicked") in (t = this) ? Object.defineProperty(t, i, {
-                                value: s,
-                                enumerable: !0,
-                                configurable: !0,
-                                writable: !0
-                            }) : t[i] = s;
-                        }
-
-                        render() {
-                            const e = (0, r.isUndefined)(this.props.sortType) ? "" : " " + this.props.sortType;
-                            return s.default.createElement("div", {
-                                className: ["sort-parent clear-fix", e].join(""),
-                                onClick: this._sortClicked
-                            }, s.default.createElement("div", {
-                                className: "dsc table-filter-arrow"
-                            }), s.default.createElement("div", {
-                                className: "asc table-filter-arrow"
-                            }));
-                        }
-
-                    }
-
-                    a.propTypes = {
-                        sort: l.default.func.isRequired,
-                        sortType: l.default.string
-                    };
-                    var o = a;
-                    t.default = o;
-                }, function (e, t) {}]);
-            });
-
-            /***/ }),
-        /* 14 */
-        /***/ (function(module, exports) {
+    /***/ }),
+    /* 14 */
+    /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
-            /***/ }),
-        /* 15 */
-        /***/ (function(module, exports) {
+    /***/ }),
+    /* 15 */
+    /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
-            /***/ })
-        /******/ ]);
+    /***/ })
+/******/ ]);

@@ -113,35 +113,41 @@
                 constructor(props) {
                     super(props);
                     this.state = {
-                        'prefixes': _sampleData.default.prefixes
+                        'castings': _sampleData.default.prefixes
                     };
                     this._filterUpdated = this._filterUpdated.bind(this);
                 }
 
                 _filterUpdated(newData, filtersObject) {
                     this.setState({
-                        'prefixes': newData
+                        'castings': newData
                     });
                 }
 
                 render() {
-                    const episodes = this.state.prefixes;
+                    const episodes = this.state.castings;
                     const elementsHtml = episodes.map((item, index) => {
                         return /*#__PURE__*/_react.default.createElement("tr", {
                             key: 'row_' + index
                         }, /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.ip_prefix), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.playDate), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.region), /*#__PURE__*/_react.default.createElement("td", {
+                        }, item.playTime), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
-                        }, item.service));
+                        }, item.carmilla), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
+                        }, item.laura), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
+                        }, item.nick), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
+                        }, item.spielsdorf));
                     });
                     return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
                         className: "nav-bar"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "container"
-                    }, "by leeleelee3264")), /*#__PURE__*/_react.default.createElement("div", {
+                    }, "by albaofspain")), /*#__PURE__*/_react.default.createElement("div", {
                         className: "examples"
                     }, /*#__PURE__*/_react.default.createElement("div", {
                         className: "basic"
@@ -153,21 +159,33 @@
                         rows: episodes,
                         onFilterUpdate: this._filterUpdated
                     }, /*#__PURE__*/_react.default.createElement("th", {
-                        key: "ip_prefix",
-                        filterkey: "ip_prefix",
+                        key: "name",
+                        filterkey: "name",
                         className: "cell",
                         casesensitive: 'true',
                         showsearch: 'true'
-                    }, "ip_prefix"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "region",
-                        filterkey: "region",
+                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
                         className: "cell"
-                    }, "region"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "service",
-                        filterkey: "service",
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "number",
+                        filterkey: "number",
                         className: "cell",
                         alignleft: 'true'
-                    }, "service"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
+                    }, "Number"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
                 }
 
             }
@@ -7706,4 +7724,4 @@ object-assign
             module.exports = JSON.parse("{\n" +
                 "  \"syncToken\": \"1717011189\",\n" +
                 "  \"createDate\": \"2024-05-29-19-33-09\",\n" +
-                "  \"prefixes\": [\n" +
+                "  \"castings\": [\n" +
