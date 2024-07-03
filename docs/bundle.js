@@ -113,7 +113,7 @@
                 constructor(props) {
                     super(props);
                     this.state = {
-                        'castings': _sampleData.default.prefixes
+                        'castings': _sampleData.default.castings
                     };
                     this._filterUpdated = this._filterUpdated.bind(this);
                 }
@@ -126,6 +126,7 @@
 
                 render() {
                     const episodes = this.state.castings;
+                    console.log(this.state)
                     console.log(episodes)
                     const elementsHtml = episodes.map((item, index) => {
                         return /*#__PURE__*/_react.default.createElement("tr", {
