@@ -139,6 +139,8 @@
                             className: "cell"
                         }, item.season), /*#__PURE__*/_react.default.createElement("td", {
                             className: "cell"
+                        }, item.season), /*#__PURE__*/_react.default.createElement("td", {
+                            className: "cell"
                         }, item.number));
                     });
                     return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
@@ -163,6 +165,10 @@
                         casesensitive: 'true',
                         showsearch: 'true'
                     }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "season",
+                        filterkey: "season",
+                        className: "cell"
+                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
                         key: "season",
                         filterkey: "season",
                         className: "cell"
