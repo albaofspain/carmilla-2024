@@ -5,3 +5,8 @@ logs.log
 *.DS_STORE
 *.DS_Store
 stats.json
+
+# pycache 
+*.pyc 
+__pycache__/ 
+backend/__pycache__/
