@@ -11,7 +11,9 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
     try:
         url = const.REQUEST_URL + start_date
         response = requests.get(url)
+        printf(response)
         raw_schedules = response.json()
+        printf(raw_schedules)
     except requests.exceptions.RequestException as e:
         print(f'Failed to fetch schedule from interpark: {e}')
         raw_schedules = {}
