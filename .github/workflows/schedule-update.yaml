@@ -32,7 +32,6 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run python script
-        working-directory: ./backend
         run: |
           python "schedule_json_builder.py" # 스케줄 업데이트 
           python "bundle_builder.py" # github page 업데이트
