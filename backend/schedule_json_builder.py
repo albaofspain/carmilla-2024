@@ -16,11 +16,11 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
         response.raise_for_status()
         raw_schedules = response.json()
         print(raw_schedules)
-    except requests.exceptions.RequestException as e:
-        print(f'Failed to fetch schedule from interpark: {e.response}')
-        raw_schedules = {}
-    except Exception as e:
-        print(f"An unexpected error occurred: {e.response}")
+    # except requests.exceptions.RequestException as e:
+    #     print(f'Failed to fetch schedule from interpark: {e.response}')
+    #     raw_schedules = {}
+    # except Exception as e:
+    #     print(f"An unexpected error occurred: {e.response}")
 
     return raw_schedules
 
