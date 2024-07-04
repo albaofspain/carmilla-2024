@@ -37,7 +37,22 @@ body {
   margin: auto;
   border: 1px solid black;
   border-collapse: collapse;
-  width: 50%; }
+  width: 50%;
+}
+
+/* 일반적인 핸드폰 */
+@media (max-width: 600px) {
+  .basic-table {
+    position: relative;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}
+
+
+
+
   .basic-table .cell {
     position: relative;
     border: 1px solid black;
