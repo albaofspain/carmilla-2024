@@ -18,3 +18,9 @@ SCHEDULE_JSON_FILE = 'resources/schedule.json'
 TOP_COMPONENT_FILE = 'component/top.js'
 BOTTOM_COMPONENT_FILE = 'component/bottom.js'
 BUNDLE_JS_FILE = '../docs/bundle.js'
+
+# key mapping
+PROXY_ADDRESS_KEY = 'PROXY_ADDRESS'
+PROXY_PORT_KEY = 'PROXY_PORT'
+PROXY_USERNAME_KEY = "PROXY_USERNAME"
+PROXY_PASSWORD_KEY = "PROXY_PASSWORD"

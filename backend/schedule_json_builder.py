@@ -2,9 +2,18 @@ import json
 
 from requests import Response
 
-import const
 import requests
+import const
+
+import proxies
 from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
+
+
+proxy_credential = {
+    "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
+    "https": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}"
+}
+
 
 """
 : raise requests.HTTPError: if the HTTP request returned an unsuccessful status code
@@ -14,14 +23,14 @@ from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 def fetch_schedule_from_interpark(start_date: str) -> Response:
     url = const.REQUEST_URL + start_date
-    print(requests)
 
     api_response = requests.get(
         url,
         headers={
             'User-Agent': 'Mozilla/5.0',
             'Cookie': 'pcid=171991104192582864; TodayGoodsList=24006970'
-        }
+        },
+        proxies=proxy_credential,
     )
     api_response.raise_for_status()
 
