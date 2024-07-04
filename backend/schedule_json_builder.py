@@ -22,8 +22,6 @@ proxy_credential = {
 
 
 def fetch_schedule_from_interpark(start_date: str) -> Response:
-    print(proxy_credential)
-    print(proxies.WEBSHARE_PORT)
     url = const.REQUEST_URL + start_date
 
     api_response = requests.get(
@@ -63,6 +61,7 @@ def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
 
 def parse_schedule(api_response: Response) -> list[ScheduleDTO]:
     raw_data = api_response.json()
+    print(raw_data)
     raw_schedules = raw_data['data']['dataList']
     schedules = []
 
