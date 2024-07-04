@@ -153,7 +153,7 @@
                         className: "basic"
                     }, /*#__PURE__*/_react.default.createElement("h3", {
                         className: "header"
-                    }, "AWS IP Table"), /*#__PURE__*/_react.default.createElement("table", {
+                    }, "Carmilla 2024 Schedule Table"), /*#__PURE__*/_react.default.createElement("table", {
                         className: "basic-table"
                     }, /*#__PURE__*/_react.default.createElement("thead", null, /*#__PURE__*/_react.default.createElement(_bundle.default, {
                         rows: episodes,
