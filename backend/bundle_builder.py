@@ -1,36 +1,34 @@
 import const
 import json
 
+"""
+: raise IOError: if an I/O operation fails (e.g. file not exists)
+"""
+
 
 def combine_bundle_js() -> None:
-    try:
-        with open(const.TOP_COMPONENT_FILE, 'r') as file:
-            top_component = file.read()
+    with open(const.TOP_COMPONENT_FILE, 'r') as file:
+        top_component = file.read()
 
-        with open(const.SCHEDULE_JSON_FILE, 'r') as file:
-            ip_ranges = json.load(file)['castings']
+    with open(const.SCHEDULE_JSON_FILE, 'r') as file:
+        ip_ranges = json.load(file)['castings']
 
-        with open(const.BOTTOM_COMPONENT_FILE, 'r') as file:
-            bottom_component = file.read()
+    with open(const.BOTTOM_COMPONENT_FILE, 'r') as file:
+        bottom_component = file.read()
 
-        with open(const.BUNDLE_JS_FILE, 'w') as file:
-            file.write(top_component)
+    with open(const.BUNDLE_JS_FILE, 'w') as file:
+        file.write(top_component)
 
-            for index, ip in enumerate(ip_ranges):
-                is_last = False
+        for index, ip in enumerate(ip_ranges):
+            is_last = False
 
-                if index == len(ip_ranges) - 1:
-                    is_last = True
+            if index == len(ip_ranges) - 1:
+                is_last = True
 
-                formatted_ip = format_json_to_str(ip, is_last)
-                file.write(formatted_ip)
+            formatted_ip = format_json_to_str(ip, is_last)
+            file.write(formatted_ip)
 
-            file.write(bottom_component)
-
-    except IOError as e:
-        print(f"IO error occurred: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        file.write(bottom_component)
 
 
 def format_json_to_str(json_input: dict, is_last=False) -> str:
@@ -55,6 +53,3 @@ def format_json_to_str(json_input: dict, is_last=False) -> str:
              "\"   } \" \n +"
              )
     return s
-
-
-combine_bundle_js()

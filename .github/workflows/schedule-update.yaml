@@ -34,8 +34,7 @@ jobs:
       - name: Run python script
         run: |
           export PYTHONPATH="${PYTHONPATH}:$(pwd)"
-          python3 "./backend/schedule_json_builder.py" # 스케줄 업데이트 
-          python3 "./backend/bundle_builder.py" # github page 업데이트
+          python3 "./backend/main.py"
       - name: Commits
         run: |
           git config --local user.email "absinthe4902@naver.com"

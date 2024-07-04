@@ -4,7 +4,6 @@ from requests import Response
 
 import const
 import requests
-from datetime import datetime
 from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 """
@@ -60,10 +59,3 @@ def parse_schedule(api_response: Response) -> list[ScheduleDTO]:
         schedules.append(ScheduleDTOBuilder.build(raw_schedule))
 
     return schedules
-
-
-today = datetime.now().strftime("%Y%m%d")
-interpark_schedules = fetch_schedule_from_interpark(today)
-
-my_schedules = parse_schedule(interpark_schedules)
-write_schedule_in_json(my_schedules)
