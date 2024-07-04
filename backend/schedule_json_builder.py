@@ -14,6 +14,7 @@ from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 def fetch_schedule_from_interpark(start_date: str) -> Response:
     url = const.REQUEST_URL + start_date
+    print(requests)
 
     api_response = requests.get(
         url,
