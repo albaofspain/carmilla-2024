@@ -14,6 +14,7 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
         response = requests.get(url)
         print(response)
         print(response.reason)
+        print(response.content)
         response.raise_for_status()
         raw_schedules = response.json()
         print(raw_schedules)
