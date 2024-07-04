@@ -8,7 +8,7 @@ from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 
 def fetch_schedule_from_interpark(start_date: str) -> dict:
-    try:
+    #try:
         url = const.REQUEST_URL + start_date
         print(url)
         response = requests.get(url)
