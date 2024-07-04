@@ -22,7 +22,7 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
     # except Exception as e:
     #     print(f"An unexpected error occurred: {e.response}")
 
-    return raw_schedules
+    return {}
 
 
 def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
