@@ -22,13 +22,13 @@ proxy_credential = {
 
 
 def fetch_schedule_from_interpark(start_date: str) -> Response:
+    print(proxy_credential)
     url = const.REQUEST_URL + start_date
 
     api_response = requests.get(
         url,
         headers={
             'User-Agent': 'Mozilla/5.0',
-            'Cookie': 'pcid=171991104192582864; TodayGoodsList=24006970'
         },
         proxies=proxy_credential,
     )
