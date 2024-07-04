@@ -33,8 +33,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run python script
         run: |
-          python "schedule_json_builder.py" # 스케줄 업데이트 
-          python "bundle_builder.py" # github page 업데이트
+          python "../backend/schedule_json_builder.py" # 스케줄 업데이트 
+          python "../backend/bundle_builder.py" # github page 업데이트
       - name: Commits
         run: |
           git config --local user.email "absinthe4902@naver.com"
