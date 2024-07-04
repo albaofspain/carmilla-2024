@@ -18,7 +18,8 @@ def fetch_schedule_from_interpark(start_date: str) -> Response:
     api_response = requests.get(
         url,
         headers={
-            'User-Agent': 'Mozilla/5.0'
+            'User-Agent': 'Mozilla/5.0',
+            'Cookie': 'pcid=171991104192582864; TodayGoodsList=24006970'
         }
     )
     api_response.raise_for_status()
