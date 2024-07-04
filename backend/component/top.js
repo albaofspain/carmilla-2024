@@ -159,14 +159,14 @@
                         rows: episodes,
                         onFilterUpdate: this._filterUpdated
                     }, /*#__PURE__*/_react.default.createElement("th", {
-                        key: "date",
-                        filterkey: "date",
+                        key: "playDate",
+                        filterkey: "playDate",
                         className: "cell",
                         casesensitive: 'true',
                         showsearch: 'true'
                     }, "관람일"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "time",
-                        filterkey: "time",
+                        key: "playTime",
+                        filterkey: "playTime",
                         className: "cell"
                     }, "시간"), /*#__PURE__*/_react.default.createElement("th", {
                         key: "carmilla",
