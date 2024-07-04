@@ -113,7 +113,7 @@
                 constructor(props) {
                     super(props);
                     this.state = {
-                        'castings': _sampleData.default.prefixes
+                        'castings': _sampleData.default.castings
                     };
                     this._filterUpdated = this._filterUpdated.bind(this);
                 }
@@ -159,33 +159,33 @@
                         rows: episodes,
                         onFilterUpdate: this._filterUpdated
                     }, /*#__PURE__*/_react.default.createElement("th", {
-                        key: "name",
-                        filterkey: "name",
+                        key: "date",
+                        filterkey: "date",
                         className: "cell",
                         casesensitive: 'true',
                         showsearch: 'true'
-                    }, "Name"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "season",
-                        filterkey: "season",
+                    }, "관람일"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "time",
+                        filterkey: "time",
                         className: "cell"
-                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "season",
-                        filterkey: "season",
+                    }, "시간"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "carmilla",
+                        filterkey: "carmilla",
                         className: "cell"
-                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "season",
-                        filterkey: "season",
+                    }, "카르밀라"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "laura",
+                        filterkey: "laura",
                         className: "cell"
-                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "season",
-                        filterkey: "season",
+                    }, "로라"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "nick",
+                        filterkey: "nick",
                         className: "cell"
-                    }, "Season"), /*#__PURE__*/_react.default.createElement("th", {
-                        key: "number",
-                        filterkey: "number",
+                    }, "닉"), /*#__PURE__*/_react.default.createElement("th", {
+                        key: "spielsdorf",
+                        filterkey: "spielsdorf",
                         className: "cell",
                         alignleft: 'true'
-                    }, "Number"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
+                    }, "슈필스도르프"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
                 }
 
             }

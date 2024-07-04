@@ -1,280 +1,264 @@
 {
     "castings": [
         {
-            "playDate": "20240703",
-            "playTime": "1600",
-            "carmilla": "유주혜",
-            "laura": "박새힘",
-            "nick": "민도희",
-            "spielsdorf": "한상훈"
-        },
-        {
-            "playDate": "20240703",
-            "playTime": "2000",
-            "carmilla": "정예인",
-            "laura": "이서영",
-            "nick": "송영미",
-            "spielsdorf": "한상훈"
-        },
-        {
-            "playDate": "20240704",
-            "playTime": "2000",
+            "playDate": "07/04(목)",
+            "playTime": "20:00",
             "carmilla": "유주혜",
             "laura": "이재림",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240705",
-            "playTime": "2000",
+            "playDate": "07/05(금)",
+            "playTime": "20:00",
             "carmilla": "전민지",
             "laura": "이서영",
             "nick": "김서연",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240706",
-            "playTime": "1500",
+            "playDate": "07/06(토)",
+            "playTime": "15:00",
             "carmilla": "정예인",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240706",
-            "playTime": "1900",
+            "playDate": "07/06(토)",
+            "playTime": "19:00",
             "carmilla": "전민지",
             "laura": "박새힘",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240707",
-            "playTime": "1400",
+            "playDate": "07/07(일)",
+            "playTime": "14:00",
             "carmilla": "전민지",
             "laura": "이서영",
             "nick": "민도희",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240707",
-            "playTime": "1800",
+            "playDate": "07/07(일)",
+            "playTime": "18:00",
             "carmilla": "정예인",
             "laura": "박새힘",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240709",
-            "playTime": "2000",
+            "playDate": "07/09(화)",
+            "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "이서영",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240710",
-            "playTime": "1600",
+            "playDate": "07/10(수)",
+            "playTime": "16:00",
             "carmilla": "전민지",
             "laura": "이재림",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240710",
-            "playTime": "2000",
+            "playDate": "07/10(수)",
+            "playTime": "20:00",
             "carmilla": "전민지",
             "laura": "박새힘",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240711",
-            "playTime": "2000",
+            "playDate": "07/11(목)",
+            "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "이서영",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240712",
-            "playTime": "2000",
+            "playDate": "07/12(금)",
+            "playTime": "20:00",
             "carmilla": "유주혜",
             "laura": "이서영",
             "nick": "민도희",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240713",
-            "playTime": "1500",
+            "playDate": "07/13(토)",
+            "playTime": "15:00",
             "carmilla": "정예인",
             "laura": "박새힘",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240713",
-            "playTime": "1900",
+            "playDate": "07/13(토)",
+            "playTime": "19:00",
             "carmilla": "전민지",
             "laura": "이서영",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240714",
-            "playTime": "1400",
+            "playDate": "07/14(일)",
+            "playTime": "14:00",
             "carmilla": "유주혜",
             "laura": "이재림",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240714",
-            "playTime": "1800",
+            "playDate": "07/14(일)",
+            "playTime": "18:00",
             "carmilla": "유주혜",
             "laura": "박새힘",
             "nick": "민도희",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240716",
-            "playTime": "2000",
+            "playDate": "07/16(화)",
+            "playTime": "20:00",
             "carmilla": "전민지",
             "laura": "박새힘",
             "nick": "김서연",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240717",
-            "playTime": "1600",
+            "playDate": "07/17(수)",
+            "playTime": "16:00",
             "carmilla": "유주혜",
             "laura": "이서영",
             "nick": "민도희",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240717",
-            "playTime": "2000",
+            "playDate": "07/17(수)",
+            "playTime": "20:00",
             "carmilla": "유주혜",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240718",
-            "playTime": "2000",
+            "playDate": "07/18(목)",
+            "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "이서영",
             "nick": "김서연",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240719",
-            "playTime": "2000",
+            "playDate": "07/19(금)",
+            "playTime": "20:00",
             "carmilla": "전민지",
             "laura": "박새힘",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240720",
-            "playTime": "1500",
+            "playDate": "07/20(토)",
+            "playTime": "15:00",
             "carmilla": "정예인",
             "laura": "이서영",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240720",
-            "playTime": "1900",
+            "playDate": "07/20(토)",
+            "playTime": "19:00",
             "carmilla": "전민지",
             "laura": "이서영",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240721",
-            "playTime": "1400",
+            "playDate": "07/21(일)",
+            "playTime": "14:00",
             "carmilla": "정예인",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240721",
-            "playTime": "1800",
+            "playDate": "07/21(일)",
+            "playTime": "18:00",
             "carmilla": "유주혜",
             "laura": "이재림",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240723",
-            "playTime": "2000",
+            "playDate": "07/23(화)",
+            "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240724",
-            "playTime": "1600",
+            "playDate": "07/24(수)",
+            "playTime": "16:00",
             "carmilla": "유주혜",
             "laura": "이서영",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240724",
-            "playTime": "2000",
+            "playDate": "07/24(수)",
+            "playTime": "20:00",
             "carmilla": "유주혜",
             "laura": "박새힘",
             "nick": "김서연",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240725",
-            "playTime": "2000",
+            "playDate": "07/25(목)",
+            "playTime": "20:00",
             "carmilla": "전민지",
             "laura": "박새힘",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240726",
-            "playTime": "2000",
+            "playDate": "07/26(금)",
+            "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240727",
-            "playTime": "1500",
+            "playDate": "07/27(토)",
+            "playTime": "15:00",
             "carmilla": "유주혜",
             "laura": "박새힘",
             "nick": "민도희",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240727",
-            "playTime": "1900",
+            "playDate": "07/27(토)",
+            "playTime": "19:00",
             "carmilla": "유주혜",
             "laura": "이재림",
             "nick": "송영미",
             "spielsdorf": "반정모"
         },
         {
-            "playDate": "20240728",
-            "playTime": "1400",
+            "playDate": "07/28(일)",
+            "playTime": "14:00",
             "carmilla": "정예인",
             "laura": "이서영",
             "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
-            "playDate": "20240728",
-            "playTime": "1800",
+            "playDate": "07/28(일)",
+            "playTime": "18:00",
             "carmilla": "전민지",
             "laura": "이서영",
             "nick": "민도희",

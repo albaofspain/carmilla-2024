@@ -4,6 +4,7 @@ EN_NICK = 'nick'
 EN_SPIELSDORF = 'spielsdorf'
 
 FIELD_PLAYDATE = 'playDate'
+FIELD_WEEK = 'weekDay'
 FIELD_PLAYTIME = 'playTime'
 FIELD_CASTINGS = 'castings'
 FILED_CHARACTER = 'characterName'
