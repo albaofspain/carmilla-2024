@@ -8,7 +8,7 @@ from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 
 def fetch_schedule_from_interpark(start_date: str) -> dict:
-    #try:
+    try:
         url = const.REQUEST_URL + start_date
         print(url)
         response = requests.get(url)
@@ -16,13 +16,14 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
         print(response.reason)
         print(response.content)
         response.raise_for_status()
+        print(response.raise_for_status())
         raw_schedules = response.json()
         print(raw_schedules)
     # except requests.exceptions.RequestException as e:
     #     print(f'Failed to fetch schedule from interpark: {e.response}')
     #     raw_schedules = {}
-    # except Exception as e:
-    #     print(f"An unexpected error occurred: {e.response}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e.message}")
 
         return {}
 
