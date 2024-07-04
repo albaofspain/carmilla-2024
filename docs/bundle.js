@@ -185,7 +185,7 @@
                         filterkey: "spielsdorf",
                         className: "cell",
                         alignleft: 'true'
-                    }, "슈필스도르프"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
+                    }, "슈필"))), /*#__PURE__*/_react.default.createElement("tbody", null, elementsHtml)))));
                 }
 
             }
