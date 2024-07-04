@@ -23,7 +23,7 @@ def fetch_schedule_from_interpark(start_date: str) -> dict:
     #     print(f'Failed to fetch schedule from interpark: {e.response}')
     #     raw_schedules = {}
     except Exception as e:
-        print(f"An unexpected error occurred: {e.message}")
+        print(f"An unexpected error occurred: {e}")
 
         return {}
 
