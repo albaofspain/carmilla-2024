@@ -7,6 +7,7 @@ from backend.schedule_json_builder import *
 today = datetime.now().strftime("%Y%m%d")
 interpark_schedules = fetch_schedule_from_interpark(today)
 
+print(interpark_schedules)
 my_schedules = parse_schedule(interpark_schedules)
 write_schedule_in_json(my_schedules)
 
