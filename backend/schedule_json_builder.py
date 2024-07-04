@@ -1,31 +1,36 @@
 import json
-import sys
+
+from requests import Response
 
 import const
 import requests
 from datetime import datetime
 from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
+"""
+: raise requests.HTTPError: if the HTTP request returned an unsuccessful status code
+: raise requests.RequestException: if the request failed for any reason
+"""
 
-def fetch_schedule_from_interpark(start_date: str) -> dict:
-    try:
-        url = const.REQUEST_URL + start_date
-        print(url)
-        response = requests.get(url)
-        print(response)
-        print(response.reason)
-        print(response.content)
-        response.raise_for_status()
-        print(response.raise_for_status())
-        raw_schedules = response.json()
-        print(raw_schedules)
-    # except requests.exceptions.RequestException as e:
-    #     print(f'Failed to fetch schedule from interpark: {e.response}')
-    #     raw_schedules = {}
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
 
-        return {}
+def fetch_schedule_from_interpark(start_date: str) -> Response:
+    url = const.REQUEST_URL + start_date
+
+    api_response = requests.get(
+        url,
+        headers={
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/124.0.0.0 Safari/537.36'
+        }
+    )
+    api_response.raise_for_status()
+
+    return api_response
+
+
+"""
+: raise IOError: if an I/O operation fails (e.g. file not exists)
+"""
 
 
 def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
@@ -36,16 +41,18 @@ def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
     for schedule in schedules:
         json_data[const.FIELD_CASTINGS].append(schedule.to_dict())
 
-    try:
-        with open(const.SCHEDULE_JSON_FILE, 'w') as file:
-            json.dump(json_data, file, ensure_ascii=False, indent=4)
-    except IOError as e:
-        print(f"IO error occurred: {e}")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+    with open(const.SCHEDULE_JSON_FILE, 'w') as file:
+        json.dump(json_data, file, ensure_ascii=False, indent=4)
 
 
-def parse_schedule(raw_data: dict) -> list[ScheduleDTO]:
+"""
+: raise KeyError: if the key is not found in the dictionary
+: raise JsonDecodeError: if the JSON data is not valid
+"""
+
+
+def parse_schedule(api_response: Response) -> list[ScheduleDTO]:
+    raw_data = api_response.json()
     raw_schedules = raw_data['data']['dataList']
     schedules = []
 
@@ -57,9 +64,6 @@ def parse_schedule(raw_data: dict) -> list[ScheduleDTO]:
 
 today = datetime.now().strftime("%Y%m%d")
 interpark_schedules = fetch_schedule_from_interpark(today)
-
-if not interpark_schedules:
-    sys.exit()
 
 my_schedules = parse_schedule(interpark_schedules)
 write_schedule_in_json(my_schedules)
