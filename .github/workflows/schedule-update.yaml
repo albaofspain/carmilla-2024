@@ -36,10 +36,10 @@ jobs:
           export PYTHONPATH="${PYTHONPATH}:$(pwd)"
           python3 "./backend/main.py"
         env:
-          PROXY_ADDRESS_KEY: ${{ secrets.PROXY_ADDRESS_KEY }}
-          PROXY_PORT_KEY: ${{ secrets.PROXY_PORT_KEY }}
-          PROXY_USERNAME_KEY: ${{ secrets.PROXY_USERNAME_KEY }}
-          PROXY_PASSWORD_KEY: ${{ secrets.PROXY_PASSWORD_KEY }}
+          PROXY_ADDRESS: ${{ secrets.PROXY_ADDRESS }}
+          PROXY_PORT: ${{ secrets.PROXY_PORT }}
+          PROXY_USERNAME: ${{ secrets.PROXY_USERNAME }}
+          PROXY_PASSWORD: ${{ secrets.PROXY_PASSWORD }}
       - name: Commits
         run: |
           git config --local user.email "absinthe4902@naver.com"
