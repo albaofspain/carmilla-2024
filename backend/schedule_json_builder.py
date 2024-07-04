@@ -23,6 +23,7 @@ proxy_credential = {
 
 def fetch_schedule_from_interpark(start_date: str) -> Response:
     print(proxy_credential)
+    print(proxies.WEBSHARE_PORT)
     url = const.REQUEST_URL + start_date
 
     api_response = requests.get(
