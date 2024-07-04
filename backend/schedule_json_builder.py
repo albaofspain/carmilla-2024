@@ -18,7 +18,7 @@ def fetch_schedule_from_interpark(start_date: str) -> Response:
     api_response = requests.get(
         url,
         headers={
-            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0'
         }
     )
     api_response.raise_for_status()
