@@ -61,7 +61,6 @@ def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
 
 def parse_schedule(api_response: Response) -> list[ScheduleDTO]:
     raw_data = api_response.json()
-    print(raw_data)
     raw_schedules = raw_data['data']['dataList']
     schedules = []
 
