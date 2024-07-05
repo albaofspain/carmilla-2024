@@ -1,4 +1,6 @@
 import json
+import time
+from datetime import datetime, timedelta
 
 from requests import Response
 
@@ -8,11 +10,21 @@ import const
 import proxies
 from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
 
-
 proxy_credential = {
     "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
     "https": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}"
 }
+
+
+def fetch_kst_datetime() -> str:
+
+    machine_timezone = time.tzname[time.localtime().tm_isdst]
+    today = datetime.now()
+
+    if machine_timezone != "KST":
+        today = today + timedelta(hours=9)
+
+    return today.strftime("%Y%m%d")
 
 
 """
