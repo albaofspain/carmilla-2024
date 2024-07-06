@@ -1,22 +1,6 @@
 {
     "castings": [
         {
-            "playDate": "07/06(토)",
-            "playTime": "15:00",
-            "carmilla": "정예인",
-            "laura": "이재림",
-            "nick": "송영미",
-            "spielsdorf": "한상훈"
-        },
-        {
-            "playDate": "07/06(토)",
-            "playTime": "19:00",
-            "carmilla": "전민지",
-            "laura": "박새힘",
-            "nick": "송영미",
-            "spielsdorf": "반정모"
-        },
-        {
             "playDate": "07/07(일)",
             "playTime": "14:00",
             "carmilla": "전민지",
