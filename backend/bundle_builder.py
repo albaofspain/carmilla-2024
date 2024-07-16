@@ -1,5 +1,5 @@
-import const
 import json
+from backend.const import schedule as const
 
 """
 : raise IOError: if an I/O operation fails (e.g. file not exists)
@@ -25,13 +25,13 @@ def combine_bundle_js() -> None:
             if index == len(ip_ranges) - 1:
                 is_last = True
 
-            formatted_ip = format_json_to_str(ip, is_last)
+            formatted_ip = _format_json_to_str(ip, is_last)
             file.write(formatted_ip)
 
         file.write(bottom_component)
 
 
-def format_json_to_str(json_input: dict, is_last=False) -> str:
+def _format_json_to_str(json_input: dict, is_last=False) -> str:
     s = ("    \"{\" \n +" +
          "\"      \\\"playDate\\\": \\\"" + json_input['playDate'] + "\\\", \" \n +" +
          "\"      \\\"playTime\\\": \\\"" + json_input['playTime'] + "\\\", \" \n +" +

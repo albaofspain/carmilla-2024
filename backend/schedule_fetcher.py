@@ -1,30 +1,19 @@
 import json
-import time
-from datetime import datetime, timedelta
 
 from requests import Response
 
 import requests
-import const
 
-from backend.dto import proxy
+from backend.const import schedule as const
 from backend.dto.schedule import ScheduleDTO, ScheduleDTOBuilder
 
-proxy_credential = {
-    "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
-    "https": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}"
-}
+#
+# proxy_credential = {
+#     "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
+#     "https": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}"
+# }
 
 
-def fetch_kst_datetime() -> str:
-
-    machine_timezone = time.tzname[time.localtime().tm_isdst]
-    today = datetime.now()
-
-    if machine_timezone != "KST":
-        today = today + timedelta(hours=9)
-
-    return today.strftime("%Y%m%d")
 
 
 """
@@ -33,7 +22,7 @@ def fetch_kst_datetime() -> str:
 """
 
 
-def fetch_schedule_from_interpark(start_date: str) -> Response:
+def fetch_schedule_from_interpark(start_date: str) -> list[ScheduleDTO]:
     url = const.REQUEST_URL + start_date
 
     api_response = requests.get(
@@ -41,11 +30,12 @@ def fetch_schedule_from_interpark(start_date: str) -> Response:
         headers={
             'User-Agent': 'Mozilla/5.0',
         },
-        proxies=proxy_credential,
+        # proxies=proxy_credential,
     )
     api_response.raise_for_status()
 
-    return api_response
+    # TODO: json에 쓰는 것도 포함해야 할 수 있다. 아니면 json 쓰는 공통 함수 만들기
+    return _parse_schedule(api_response)
 
 
 """
@@ -71,7 +61,7 @@ def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
 """
 
 
-def parse_schedule(api_response: Response) -> list[ScheduleDTO]:
+def _parse_schedule(api_response: Response) -> list[ScheduleDTO]:
     raw_data = api_response.json()
     raw_schedules = raw_data['data']['dataList']
     schedules = []
