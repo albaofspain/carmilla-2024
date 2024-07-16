@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from backend.bundle_builder import combine_bundle_js
-from backend.schedule_json_builder import *
+from backend.schedule_fetcher import *
 
 # build schedule json file
 today = fetch_kst_datetime()

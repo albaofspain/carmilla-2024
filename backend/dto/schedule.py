@@ -1,7 +1,7 @@
 import re
 
 import const
-from backend.week import Week
+from backend.const.week import Week
 
 
 class ScheduleDTO:

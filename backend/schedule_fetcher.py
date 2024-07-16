@@ -7,8 +7,8 @@ from requests import Response
 import requests
 import const
 
-import proxies
-from backend.schedule import ScheduleDTO, ScheduleDTOBuilder
+from backend.dto import proxy
+from backend.dto.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 proxy_credential = {
     "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
