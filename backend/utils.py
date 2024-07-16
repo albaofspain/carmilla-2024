@@ -1,12 +1,10 @@
-import time
-from datetime import datetime, timedelta
+import pytz
+from datetime import datetime
 
 
-def fetch_kst_datetime() -> str:
-    machine_timezone = time.tzname[time.localtime().tm_isdst]
-    today = datetime.now()
+def get_kst_today() -> str:
+    kst = pytz.timezone('Asia/Seoul')
+    kst_time = datetime.now(kst)
 
-    if machine_timezone != "KST":
-        today = today + timedelta(hours=9)
+    return kst_time.strftime("%Y%m%d")
 
-    return today.strftime("%Y%m%d")

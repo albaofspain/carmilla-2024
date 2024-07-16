@@ -1,20 +1,9 @@
 import json
-
-from requests import Response
-
 import requests
 
 from backend.const import schedule as const
 from backend.dto.schedule import ScheduleDTO, ScheduleDTOBuilder
-
-#
-# proxy_credential = {
-#     "http": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}",
-#     "https": f"http://{proxies.WEBSHARE_USERNAME}:{proxies.WEBSHARE_PASSWORD}@{proxies.WEBSHARE_ADDRESS}:{proxies.WEBSHARE_PORT}"
-# }
-
-
-
+from backend.proxy_fetcher import fetch_proxy_from_webshare
 
 """
 : raise requests.HTTPError: if the HTTP request returned an unsuccessful status code
@@ -23,19 +12,34 @@ from backend.dto.schedule import ScheduleDTO, ScheduleDTOBuilder
 
 
 def fetch_schedule_from_interpark(start_date: str) -> list[ScheduleDTO]:
-    url = const.REQUEST_URL + start_date
+    api_response = _fetch_schedule_with_proxies(start_date)
 
-    api_response = requests.get(
-        url,
-        headers={
-            'User-Agent': 'Mozilla/5.0',
-        },
-        # proxies=proxy_credential,
-    )
-    api_response.raise_for_status()
-
-    # TODO: json에 쓰는 것도 포함해야 할 수 있다. 아니면 json 쓰는 공통 함수 만들기
     return _parse_schedule(api_response)
+
+
+def _fetch_schedule_with_proxies(start_date: str) -> requests.Response:
+    proxies = fetch_proxy_from_webshare()
+
+    for proxy in proxies:
+        proxy_credential = {
+            "http": f"http://{proxy.user_name}:{proxy.password}@{proxy.proxy_address}:{proxy.port}",
+            "https": f"http://{proxy.user_name}:{proxy.password}@{proxy.proxy_address}:{proxy.port}"
+        }
+
+        url = const.REQUEST_URL + start_date
+
+        api_response = requests.get(
+            url,
+            headers={
+                'User-Agent': 'Mozilla/5.0',
+            },
+            proxies=proxy_credential,
+        )
+
+        if api_response.status_code == 200:
+            return api_response
+
+    raise requests.RequestException('All proxies are not working')
 
 
 """
@@ -61,7 +65,7 @@ def write_schedule_in_json(schedules: list[ScheduleDTO]) -> None:
 """
 
 
-def _parse_schedule(api_response: Response) -> list[ScheduleDTO]:
+def _parse_schedule(api_response: requests.Response) -> list[ScheduleDTO]:
     raw_data = api_response.json()
     raw_schedules = raw_data['data']['dataList']
     schedules = []
