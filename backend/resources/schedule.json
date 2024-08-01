@@ -1,19 +1,11 @@
 {
     "castings": [
         {
-            "playDate": "08/01(목)",
-            "playTime": "20:00",
-            "carmilla": "유주혜",
-            "laura": "이서영",
-            "nick": "김서연",
-            "spielsdorf": "한상훈"
-        },
-        {
             "playDate": "08/02(금)",
             "playTime": "20:00",
             "carmilla": "정예인",
             "laura": "박새힘",
-            "nick": "민도희",
+            "nick": "김서연",
             "spielsdorf": "한상훈"
         },
         {
@@ -29,7 +21,7 @@
             "playTime": "19:00",
             "carmilla": "정예인",
             "laura": "이서영",
-            "nick": "민도희",
+            "nick": "김서연",
             "spielsdorf": "반정모"
         },
         {
